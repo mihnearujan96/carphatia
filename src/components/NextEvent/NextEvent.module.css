@@ -1,0 +1,106 @@
+.section {
+  padding: clamp(3.5rem, 8vw, 5.5rem) clamp(1.25rem, 4vw, 3rem);
+  background: linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 50%, var(--cream) 100%);
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(27, 59, 38, 0.1);
+  box-shadow: var(--shadow-soft);
+  background: linear-gradient(
+    135deg,
+    rgba(240, 109, 59, 0.12) 0%,
+    rgba(253, 187, 45, 0.15) 35%,
+    rgba(166, 226, 46, 0.1) 100%
+  );
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 80% 20%,
+    rgba(253, 187, 45, 0.25) 0%,
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--forest-soft);
+  margin: 0 0 1rem;
+}
+
+.date {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(90deg, var(--sunset) 0%, var(--gold) 45%, var(--lime) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.sub {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin: 0 0 1.25rem;
+  letter-spacing: 0.04em;
+}
+
+.teaser {
+  font-size: 1.08rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 1rem;
+  max-width: 42ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.note {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0;
+}
+
+.cta {
+  display: inline-flex;
+  margin-top: 1.5rem;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--forest);
+  background: linear-gradient(135deg, var(--lime-soft), var(--lime));
+  border-radius: 999px;
+  box-shadow: 0 6px 24px rgba(166, 226, 46, 0.35);
+  transition: transform 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(166, 226, 46, 0.45);
+}

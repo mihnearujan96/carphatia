@@ -1,0 +1,186 @@
+.section {
+  padding: clamp(4rem, 9vw, 6.5rem) clamp(1.25rem, 4vw, 3rem);
+  background: linear-gradient(180deg, var(--cream-dark) 0%, var(--cream) 100%);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--forest-soft);
+  margin: 0 0 0.5rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.85rem, 3.5vw, 2.45rem);
+  letter-spacing: -0.02em;
+  color: var(--forest);
+  margin: 0;
+}
+
+.sub {
+  margin: 0;
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  min-height: 220px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.45s var(--ease-out), box-shadow 0.45s var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 28px 60px rgba(27, 59, 38, 0.18);
+}
+
+.cardLarge {
+  grid-column: span 7;
+  min-height: 340px;
+}
+
+.cardMed {
+  grid-column: span 5;
+  min-height: 280px;
+}
+
+.cardWide {
+  grid-column: span 6;
+}
+
+.cardTall {
+  grid-column: span 6;
+  min-height: 300px;
+}
+
+.placeholder {
+  position: absolute;
+  inset: 0;
+}
+
+.placeholder::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.12) 45%,
+    transparent 70%
+  );
+  animation: shimmer 6s ease-in-out infinite;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.1rem 1.25rem;
+  background: linear-gradient(
+    to top,
+    rgba(15, 26, 20, 0.88) 0%,
+    transparent 100%
+  );
+  color: var(--white);
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(247, 244, 238, 0.92);
+  color: var(--forest);
+}
+
+/* Gradient variants — swap for real images via siteContent.js */
+.peaks {
+  background: linear-gradient(165deg, #f06d3b 0%, #fdbb2d 35%, #6b8f5a 70%, #1b3b26 100%);
+}
+
+.garden {
+  background: linear-gradient(200deg, #e85a28 0%, #f9d67a 40%, #7cb342 75%, #1b3b26 100%);
+}
+
+.alpine {
+  background: linear-gradient(185deg, #2d5a3d 0%, #a6e22e 45%, #fdbb2d 80%, #3d2318 100%);
+}
+
+.golden {
+  background: linear-gradient(175deg, #fdbb2d 0%, #f06d3b 50%, #1b3b26 100%);
+}
+
+.ridge {
+  background: linear-gradient(160deg, #1b3b26 0%, #4a7c59 40%, #fdbb2d 85%);
+}
+
+.forest {
+  background: linear-gradient(195deg, #0f2418 0%, #3d6b4a 50%, #c4f04a 100%);
+}
+
+@media (max-width: 900px) {
+  .cardLarge,
+  .cardMed,
+  .cardWide,
+  .cardTall {
+    grid-column: span 12;
+    min-height: 240px;
+  }
+
+  .cardLarge {
+    min-height: 300px;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}

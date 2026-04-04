@@ -1,0 +1,132 @@
+.section {
+  padding: clamp(3rem, 7vw, 4.5rem) clamp(1.25rem, 4vw, 3rem);
+  background: var(--forest);
+  color: var(--cream);
+}
+
+.inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(253, 187, 45, 0.95);
+  margin: 0 0 0.65rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.85rem, 3.5vw, 2.35rem);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.65rem;
+  color: var(--cream);
+}
+
+.sub {
+  margin: 0;
+  color: rgba(247, 244, 238, 0.72);
+  font-size: 1.02rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.labelText {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(247, 244, 238, 0.85);
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.9rem 1.1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--ink);
+  background: rgba(247, 244, 238, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.25s var(--ease-out), box-shadow 0.25s var(--ease-out);
+}
+
+.input:focus,
+.textarea:focus {
+  outline: none;
+  border-color: var(--lime);
+  box-shadow: 0 0 0 3px rgba(166, 226, 46, 0.25);
+}
+
+.textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.submitRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.25rem;
+}
+
+.submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--forest);
+  background: linear-gradient(135deg, var(--lime-soft), var(--lime));
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+
+.submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(166, 226, 46, 0.35);
+}
+
+.submit:active {
+  transform: translateY(-1px);
+}
+
+.note {
+  margin: 0;
+  font-size: 0.88rem;
+  color: rgba(247, 244, 238, 0.55);
+}
+
+.success {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius-md);
+  background: rgba(166, 226, 46, 0.12);
+  border: 1px solid rgba(166, 226, 46, 0.35);
+  color: var(--cream);
+  font-weight: 600;
+}
