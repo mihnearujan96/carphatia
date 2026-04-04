@@ -7,9 +7,9 @@
 export const STRINGS = {
   ro: {
     meta: {
-      title: 'CARPHATIA — Festival experiențial · Horezu',
+      title: 'CARPHATIA — Mai mult decât un festival · Horezu, România',
       description:
-        'CARPHATIA — festival experiențial la Horezu: muzică live, drumeții în munte, ceramică tradițională UNESCO și vizite în Oltenia.',
+        'CARPHATIA — nu doar un festival la Horezu: muzică, munte, ceramică UNESCO și vizite în Oltenia. O săptămână întreagă de trăit, nu doar de ascultat.',
     },
     nav: {
       about: 'Despre',
@@ -25,7 +25,7 @@ export const STRINGS = {
       langSwitchSr: 'Schimbă limba site-ului',
     },
     hero: {
-      eyebrow: 'Horezu · festival experiențial',
+      eyebrow: 'Horezu · nu doar un festival',
       title: 'Muzică, munte și suflet oltenesc',
       sub:
         'CARPHATIA adună la poalele Munților Loviștea și Capățânii, lângă orașul Horezu — cunoscut pentru ceramica tradițională înscrisă UNESCO — o săptămână întreagă de concerte, trasee montane ghidate, ateliere de olărit și plimbări prin sate și meleaguri din Oltenia.',
@@ -33,12 +33,12 @@ export const STRINGS = {
       ctaSecondary: 'Vezi atmosfera',
     },
     about: {
-      label: 'Festivalul',
+      label: 'Despre noi',
       title: 'Mai mult decât un festival: o experiență la Horezu',
       p1:
         'Horezu este un oraș din județul Vâlcea, la marginea Subcarpaților Meridionali, renumit în lume pentru meșteșugul ceramicii de Horezu — recunoscut de UNESCO ca patrimoniu cultural imaterial din 2012. Meșterii lucrează lutul după tradiții vechi: bărbații pregătesc argila, femeile pictează motive precum cocoșul sau spirala, cu unelte precum cornul de bivol.',
       p2:
-        'CARPHATIA pornește de aici: muzică în aer liber, seri pe pajiști, drumeții spre creste și paduri, vizite la olari și prin târgurile de ceramică (tradiția târgului de la Horezu merge înapoi până în 1971). Vrei munte, sunet bun și contact cu meșteșugul viu — le găsești pe toate într-un singur bilet.',
+        'CARPHATIA pornește de aici: muzică în aer liber, seri pe pajiști, drumeții spre creste și păduri, vizite la olari și prin târgurile de ceramică (tradiția târgului de la Horezu merge înapoi până în 1971). Vrei munte, sunet bun și contact cu meșteșugul viu — le găsești pe toate într-un singur bilet.',
       accent:
         'Viziunea noastră: respect pentru deal și vale, bucurie în mulțime și o experiență care leagă scena de tradiția locului — nu un concert izolat, ci o săptămână trăită în peisajul real al Olteniei.',
       p3:
@@ -48,7 +48,7 @@ export const STRINGS = {
       label: 'Inspirație vizuală',
       title: 'Grădină, festival și creastă',
       sub:
-        'Câteva imagini care prind spiritul CARPHATIA — de la dans și scene în natură la creste, ateliere și ulițe de sat. Locul real este Horezu și împrejurimile sale din Carpații Meridionali.',
+        'Câteva imagini care surprind atmosfera CARPHATIA — de la dans și scene în natură la creste, ateliere și ulițe de sat. Locul real este Horezu și împrejurimile sale din Carpații Meridionali.',
       items: {
         g1: {
           caption:
@@ -103,20 +103,21 @@ export const STRINGS = {
         {
           title: 'Meșteșug & vizite',
           description:
-            'Întâlniri cu olarii din Horezu, plimbări prin târgul de ceramică și prin sate, mănăstiri și locuri care spun povestea Olteniei — cultură integrată în traseu, nu opțional separat.',
+            'Întâlniri cu olarii din Horezu, plimbări prin târgul de ceramică și prin sate, mănăstiri și locuri care spun povestea Olteniei — cultură integrată în traseu, nu un adaos opțional.',
         },
         {
-          title: 'Pass-ul CARPHATIA',
+          title: 'Pachetul CARPHATIA',
           description:
-            'Un bilet pentru întreaga experiență: urcări, concerte, vizite curatoriate și seri de festival — o săptămână nouă de munte la Horezu.',
+            'Un bilet pentru întreaga experiență: urcări, concerte, vizite curatoriate și seri de festival — o nouă săptămână de munte la Horezu.',
         },
       ],
     },
     nextEvent: {
       label: 'Următorul eveniment',
-      title: 'Vara 2026',
+      title: 'Vara anului 2026',
       sub: 'Horezu · CARPHATIA',
-      teaser: 'Mai multe detalii în curând — line-up, trasee și bilete.',
+      teaser:
+        'Mai multe detalii în curând — program artistic, trasee montane și bilete.',
       note: 'Urmărește pagina sau înscrie-te pe listă ca să fii la curent.',
     },
     contact: {
@@ -138,15 +139,15 @@ export const STRINGS = {
     },
     footer: {
       meta:
-        '© {year} CARPHATIA — festival experiențial Horezu · muzică, munte și ceramică tradițională.',
+        '© {year} CARPHATIA — mai mult decât un festival · Horezu · muzică, munte și ceramică tradițională.',
     },
   },
 
   en: {
     meta: {
-      title: 'CARPHATIA — Experiential festival · Horezu, Romania',
+      title: 'CARPHATIA — More than a festival · Horezu, Romania',
       description:
-        'CARPHATIA — an experiential festival in Horezu: live music, mountain hikes, UNESCO-listed Horezu ceramics, and visits across Oltenia.',
+        'CARPHATIA — not just a festival in Horezu: music, mountains, UNESCO ceramics and visits across Oltenia. A week to live, not only to listen.',
     },
     nav: {
       about: 'About',
@@ -162,7 +163,7 @@ export const STRINGS = {
       langSwitchSr: 'Change site language',
     },
     hero: {
-      eyebrow: 'Horezu · experiential festival',
+      eyebrow: 'Horezu · more than a festival',
       title: 'Music, mountains and Oltenia soul',
       sub:
         'CARPHATIA gathers at the foot of the Loviștea and Capățânii ranges, next to Horezu — a town famed for traditional Horezu pottery, inscribed on UNESCO’s Representative List of Intangible Cultural Heritage since 2012. One week of concerts, guided hikes, pottery workshops, and walks through villages and hills in Oltenia.',
@@ -170,7 +171,7 @@ export const STRINGS = {
       ctaSecondary: 'See the mood',
     },
     about: {
-      label: 'The festival',
+      label: 'About us',
       title: 'More than a stage: a full experience in Horezu',
       p1:
         'Horezu lies in Vâlcea County, on the edge of the Southern Subcarpathians, world-renowned for Horezu ceramics — recognised by UNESCO as intangible heritage since 2012. Makers still work clay in the old way: men prepare the earth; women paint roosters, spirals and more with tools such as the hollowed bull’s horn.',
@@ -243,9 +244,9 @@ export const STRINGS = {
             'Meet Horezu potters, explore the pottery fair and villages, monasteries and places that carry Oltenia’s story — culture inside the route, not a separate add-on.',
         },
         {
-          title: 'The CARPHATIA pass',
+          title: 'The CARPHATIA package',
           description:
-            'One ticket for the full loop: hikes, concerts, curated visits and festival nights — a new mountain week rooted in Horezu.',
+            'One ticket for the full experience: hikes, concerts, curated visits and festival nights — a fresh mountain week rooted in Horezu.',
         },
       ],
     },
@@ -253,7 +254,8 @@ export const STRINGS = {
       label: 'Next event',
       title: 'Summer 2026',
       sub: 'Horezu · CARPHATIA',
-      teaser: 'More details coming soon — line-up, trails and tickets.',
+      teaser:
+        'More details coming soon — line-up, mountain trails and tickets.',
       note: 'Follow along or join the list to stay in the loop.',
     },
     contact: {
@@ -275,7 +277,7 @@ export const STRINGS = {
     },
     footer: {
       meta:
-        '© {year} CARPHATIA — experiential festival in Horezu · music, mountains & traditional ceramics.',
+        '© {year} CARPHATIA — more than a festival · Horezu · music, mountains & traditional ceramics.',
     },
   },
 }
