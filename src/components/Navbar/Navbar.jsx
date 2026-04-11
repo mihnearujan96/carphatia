@@ -33,7 +33,7 @@ export function Navbar() {
       <div className={styles.inner}>
         <a href="#top" className={styles.brand} onClick={() => setOpen(false)}>
           <img
-            src="/kjvkllv.png"
+            src="/dadada.png"
             alt=""
             className={styles.logo}
             width={600}

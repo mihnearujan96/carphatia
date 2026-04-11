@@ -11,14 +11,8 @@ const variantClass = {
   forest: styles.forest,
 }
 
-const layout = [
-  'cardLarge',
-  'cardMed',
-  'cardWide',
-  'cardTall',
-  'cardWide',
-  'cardWide',
-]
+/** Grid 2×2 egal — doar 4 clipuri, fără imagini statice */
+const layout = ['cardCell', 'cardCell', 'cardCell', 'cardCell']
 
 export function Gallery() {
   const { t } = useI18n()
@@ -48,12 +42,16 @@ export function Gallery() {
                 className={`${styles.card} ${styles[layout[i] || 'cardWide']}`}
               >
                 <span className={styles.badge}>{badge}</span>
-                {item.imageSrc ? (
-                  <img
-                    className={styles.img}
-                    src={item.imageSrc}
-                    alt={alt}
-                    loading="lazy"
+                {item.videoSrc ? (
+                  <video
+                    className={styles.media}
+                    src={item.videoSrc}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="auto"
+                    aria-label={alt}
                   />
                 ) : (
                   <div

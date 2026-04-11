@@ -1,35 +1,26 @@
 /**
- * CARPHATIA — asset-uri galerie. Textele sunt în src/i18n/strings.js (RO / EN).
+ * CARPHATIA — galerie: 4 clipuri MP4. Textele sunt în src/i18n/strings.js (RO / EN).
+ * Mapare fișiere: 12285855 = olărit; 9003383 = petrecere/festival; 12189760 = munte; 4955193 = poteci/ATV.
  */
 export const galleryItems = [
   {
     id: 'g1',
-    imageSrc: '/images/gallery/carphatia-gallery-01-festival-garden.png',
-    variant: 'peaks',
+    videoSrc: '/videos/12285855_1920_1080_24fps.mp4',
+    variant: 'alpine',
   },
   {
     id: 'g2',
-    imageSrc: '/images/gallery/carphatia-gallery-02-mountain-hike.png',
+    videoSrc: '/videos/12189760_3840_2160_60fps.mp4',
     variant: 'garden',
   },
   {
     id: 'g3',
-    imageSrc: '/images/gallery/carphatia-gallery-03-pottery-heritage.png',
-    variant: 'alpine',
+    videoSrc: '/videos/9003383-hd_1920_1080_25fps.mp4',
+    variant: 'peaks',
   },
   {
     id: 'g4',
-    imageSrc: '/images/gallery/carphatia-gallery-04-stage-meadow.png',
+    videoSrc: '/videos/4955193-hd_1920_1080_25fps.mp4',
     variant: 'golden',
-  },
-  {
-    id: 'g5',
-    imageSrc: '/images/gallery/carphatia-gallery-05-ridge-drone.png',
-    variant: 'ridge',
-  },
-  {
-    id: 'g6',
-    imageSrc: '/images/gallery/carphatia-gallery-06-village-visit.png',
-    variant: 'forest',
   },
 ]

@@ -19,7 +19,7 @@ export function Footer() {
       <div className={styles.inner}>
         <a href="#top" className={styles.brand}>
           <img
-            src="/kjvkllv.png"
+            src="/dadada.png"
             alt=""
             className={styles.logo}
             width={560}

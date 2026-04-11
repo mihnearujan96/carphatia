@@ -14,9 +14,11 @@ export function About() {
         <div className={styles.grid}>
           <div className={styles.col}>
             <p>{t('about.p1')}</p>
+            <p>{t('about.pHistory')}</p>
             <p>{t('about.p2')}</p>
           </div>
           <div className={styles.col}>
+            <p>{t('about.pMountains')}</p>
             <div className={styles.accent}>
               <p>{t('about.accent')}</p>
             </div>
