@@ -1,6 +1,6 @@
 /**
- * CARPHATIA — galerie: 4 clipuri MP4. Textele sunt în src/i18n/strings.js (RO / EN).
- * Mapare fișiere: 12285855 = olărit; 9003383 = petrecere/festival; 12189760 = munte; 4955193 = poteci/ATV.
+ * CARPHATIA — galerie: 4 clipuri MP4 (H.264, max 1080p, ~30 fps, faststart, fără audio).
+ * Textele: src/i18n/strings.js. Fișiere: 12285855 = olărit; 9003383 = festival; 12189760 = munte; 4955193 = poteci.
  */
 export const galleryItems = [
   {

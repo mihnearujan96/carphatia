@@ -106,6 +106,12 @@
   animation: shimmer 6s ease-in-out infinite;
 }
 
+.videoWrap {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .media {
   position: absolute;
   inset: 0;

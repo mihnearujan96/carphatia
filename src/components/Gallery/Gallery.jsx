@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from 'react'
 import { galleryItems } from '../../data/siteContent'
 import { useI18n } from '../../i18n/useI18n'
 import styles from './Gallery.module.css'
@@ -9,6 +10,53 @@ const variantClass = {
   golden: styles.golden,
   ridge: styles.ridge,
   forest: styles.forest,
+}
+
+/** Încarcă MP4 doar când cardul e aproape de viewport — evită 4 descărcări simultane la load. */
+function GalleryLoopVideo({ src, className, ariaLabel }) {
+  const wrapRef = useRef(null)
+  const videoRef = useRef(null)
+  const [load, setLoad] = useState(false)
+
+  useEffect(() => {
+    const el = wrapRef.current
+    if (!el) return
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setLoad(true)
+          io.disconnect()
+        }
+      },
+      { rootMargin: '180px', threshold: 0 },
+    )
+    io.observe(el)
+    return () => io.disconnect()
+  }, [])
+
+  useEffect(() => {
+    if (!load) return
+    const v = videoRef.current
+    if (!v) return
+    const p = v.play()
+    if (p !== undefined) p.catch(() => {})
+  }, [load])
+
+  return (
+    <div ref={wrapRef} className={styles.videoWrap}>
+      <video
+        ref={videoRef}
+        className={className}
+        src={load ? src : undefined}
+        autoPlay={load}
+        muted
+        loop
+        playsInline
+        preload={load ? 'metadata' : 'none'}
+        aria-label={ariaLabel}
+      />
+    </div>
+  )
 }
 
 /** Grid 2×2 egal — doar 4 clipuri, fără imagini statice */
@@ -43,15 +91,10 @@ export function Gallery() {
               >
                 <span className={styles.badge}>{badge}</span>
                 {item.videoSrc ? (
-                  <video
-                    className={styles.media}
+                  <GalleryLoopVideo
                     src={item.videoSrc}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    aria-label={alt}
+                    className={styles.media}
+                    ariaLabel={alt}
                   />
                 ) : (
                   <div
