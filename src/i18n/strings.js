@@ -8,9 +8,14 @@
 export const STRINGS = {
   ro: {
     meta: {
-      title: 'CARPHATIA — Mai mult decât un festival · Horezu, România',
+      title:
+        'KARPATHIA | Evenimente de vară · Horezu · ceramică UNESCO & festival',
       description:
-        'CARPHATIA la Horezu: festival o săptămână la poalele Căpățânilor, spre Vârful lui Roman — seri cu muzică, scene în aer liber, poteci și olărit UNESCO în Oltenia.',
+        'KARPATHIA la Horezu: evenimente de vară, muzică și festival la poalele Căpățânii. Ceramică de Horezu — patrimoniu cultural imaterial UNESCO din 2012 — ateliere de olărit, târguri tradiționale și Mănăstirea Hurezi (UNESCO). Rezervări: karpathia.ro.',
+      keywords:
+        'KARPATHIA, Horezu, ceramică Horezu, ceramica UNESCO, evenimente Horezu, festival Horezu, olărit Horezu, Mănăstirea Hurezi UNESCO, Căpățânii, Vâlcea, evenimente de vară',
+      siteUrl: 'https://karpathia.ro/',
+      ogImage: 'https://karpathia.ro/dadada.png',
     },
     nav: {
       about: 'Despre',
@@ -20,7 +25,7 @@ export const STRINGS = {
       nextEvent: 'Evenimente de vară',
       location: 'Locație',
       cta: 'Sună pentru rezervări',
-      homeSr: 'CARPHATIA — început',
+      homeSr: 'KARPATHIA — început',
       menuSr: 'Meniu',
       langRo: 'Română',
       langEn: 'English',
@@ -30,7 +35,7 @@ export const STRINGS = {
       eyebrow: 'Horezu · mai mult decât un weekend',
       title: 'Unde sunetul întâlnește muntele',
       sub:
-        'La Horezu, la poalele Munților Căpățânii — cu Vârful lui Roman și creasta din jur la câteva minute de oraș — CARPHATIA e o săptămână de festival: seri cu muzică și lumină, scene în aer liber, bas și energie de mulțime. Pe lângă concerte, urci pe poteci spre Loviștea și Subcarpați, intri în ateliere de olărit (ceramică UNESCO) și prin sate din Oltenia — trăiești locul, nu doar îl treci pe listă.',
+        'La Horezu, la poalele Munților Căpățânii — cu Vârful lui Roman și creasta din jur la câteva minute de oraș — KARPATHIA e o săptămână de festival: seri cu muzică și lumină, scene în aer liber, bas și energie de mulțime. Pe lângă concerte, urci pe poteci spre Loviștea și Subcarpați, intri în ateliere de olărit (ceramică UNESCO) și prin sate din Oltenia — trăiești locul, nu doar îl treci pe listă.',
       ctaPrimary: 'Înscrie-te pe listă',
       ctaSecondary: 'Vezi atmosfera',
     },
@@ -42,13 +47,13 @@ export const STRINGS = {
       pHistory:
         'Prima atestare documentară a localității „Hurez” este din 5 septembrie 1487, în vremea lui Vlad Călugărul. Așezarea s-a dezvoltat pe vechi drumuri comerciale, inclusiv cel al sării. La Românii de Jos, Constantin Brâncoveanu a înălțat între 1690 și 1693 ansamblul Mănăstirii Hurezi, capodoperă brâncovenească înscrisă din 1993 în Patrimoniul Mondial UNESCO (sit cultural).',
       p2:
-        'CARPHATIA pornește de aici: muzică în aer liber, seri pe pajiști, drumeții spre creste și păduri, vizite la olari și prin târgurile de ceramică (tradiția târgului de la Horezu merge înapoi până în 1971). Vrei munte, sunet bun și contact cu meșteșugul viu — le găsești pe toate într-un singur bilet.',
+        'KARPATHIA pornește de aici: muzică în aer liber, seri pe pajiști, drumeții spre creste și păduri, vizite la olari și prin târgurile de ceramică (tradiția târgului de la Horezu merge înapoi până în 1971). Vrei munte, sunet bun și contact cu meșteșugul viu — le găsești pe toate într-un singur bilet.',
       pMountains:
         'Geografic, Horezu se află la contactul dintre Subcarpați și masivele Căpățânii și Loviștea (Carpații Meridionali). În aproximativ 10–15 minute cu mașina poți fi deja la poalele traseelor spre versanții înalți sau la Mănăstirea Hurezi (la câțiva kilometri de centru), la începutul peisajului de deal și munte. Creasta Căpățânii urcă spre vârfuri de peste 2.100 m (de exemplu Nedeia, ~2.130 m); urcarea până la creastă înseamnă trasee de durată, nu doar drumul scurt de la oraș.',
       accent:
         'Viziunea noastră: respect pentru deal și vale, bucurie în mulțime și o experiență care leagă scena de tradiția locului — nu un concert izolat, ci o săptămână trăită în peisajul real al Olteniei.',
       p3:
-        'Indiferent dacă vii pentru bas, pentru urcat sau pentru prima cafea în curtea unei case de piatră, CARPHATIA te invită să lași praful de pe potecă pe bocanci și amintirile de festival în suflet.',
+        'Indiferent dacă vii pentru bas, pentru urcat sau pentru prima cafea în curtea unei case de piatră, KARPATHIA te invită să lași praful de pe potecă pe bocanci și amintirile de festival în suflet.',
     },
     gallery: {
       label: 'Inspirație vizuală',
@@ -85,7 +90,7 @@ export const STRINGS = {
       label: 'Experiența',
       title: 'Patru fire, o săptămână care prinde',
       sub:
-        'Muzică, munte, olărit, oameni — CARPHATIA împletește totul ca să simți Horezu pe piele, nu din broșură.',
+        'Muzică, munte, olărit, oameni — KARPATHIA împletește totul ca să simți Horezu pe piele, nu din broșură.',
       cards: [
         {
           title: 'Munte & poteci',
@@ -103,7 +108,7 @@ export const STRINGS = {
             'Olari, târg de ceramică, sate și mănăstiri — povestea Olteniei e în traseu, nu la final de „extra”.',
         },
         {
-          title: 'Tot pachetul CARPHATIA',
+          title: 'Tot pachetul KARPATHIA',
           description:
             'Un bilet, o săptămână: urcări, concerte, vizite alese și seri de festival — tot ce promite Horezu, într-un singur drum.',
         },
@@ -130,12 +135,12 @@ export const STRINGS = {
         'https://www.google.com/maps?q=The+Park+Strada+Nicolae+Balcescu+31+Horezu&z=16&output=embed',
     },
     reservations: {
-      phone: '+0771.017.860',
+      phone: '0771 017 860',
       telHref: 'tel:+40771017860',
       callCta: 'Sună pentru rezervări',
       smsCta: 'Trimite mesaj',
       smsBody:
-        'Bună, aș dori o rezervare la CARPHATIA. Eveniment: ',
+        'Bună, aș dori o rezervare la KARPATHIA. Eveniment: ',
     },
     contact: {
       label: 'Rezervări',
@@ -146,15 +151,20 @@ export const STRINGS = {
     },
     footer: {
       meta:
-        '© {year} CARPHATIA — mai mult decât un festival · Horezu · muzică, munte și ceramică tradițională.',
+        '© {year} KARPATHIA — mai mult decât un festival · Horezu · muzică, munte și ceramică tradițională.',
     },
   },
 
   en: {
     meta: {
-      title: 'CARPHATIA — More than a festival · Horezu, Romania',
+      title:
+        'KARPATHIA | Summer events · Horezu · UNESCO ceramics & festival',
       description:
-        'CARPHATIA in Horezu: a week-long festival at the foot of the Căpățânii, toward Roman Peak — music-filled nights, open-air stages, trails and UNESCO pottery in Oltenia.',
+        'KARPATHIA in Horezu: summer events, music and festival life at the foot of the Căpățânii. Horezu ceramics — UNESCO intangible heritage since 2012 — pottery workshops, traditional fairs and Horezu Monastery (UNESCO). Book: karpathia.ro.',
+      keywords:
+        'KARPATHIA, Horezu, Horezu ceramics, UNESCO pottery, Horezu events, Horezu festival, pottery Horezu, Horezu Monastery UNESCO, Căpățânii, Vâlcea, summer events Romania',
+      siteUrl: 'https://karpathia.ro/',
+      ogImage: 'https://karpathia.ro/dadada.png',
     },
     nav: {
       about: 'About',
@@ -164,7 +174,7 @@ export const STRINGS = {
       nextEvent: 'Summer events',
       location: 'Location',
       cta: 'Call for reservations',
-      homeSr: 'CARPHATIA — home',
+      homeSr: 'KARPATHIA — home',
       menuSr: 'Menu',
       langRo: 'Romanian',
       langEn: 'English',
@@ -174,7 +184,7 @@ export const STRINGS = {
       eyebrow: 'Horezu · more than a long weekend',
       title: 'Where sound meets the mountain',
       sub:
-        'In Horezu, beneath the Căpățânii — Roman Peak and the ridges above town are minutes away — CARPHATIA is a full week of festival life: music-filled nights, open-air stages, bass and crowd energy. Beyond the gigs, you hike trails toward Loviștea and the Subcarpathians, join UNESCO pottery workshops and wander Oltenia’s villages — you live the place; you don’t just tick a box.',
+        'In Horezu, beneath the Căpățânii — Roman Peak and the ridges above town are minutes away — KARPATHIA is a full week of festival life: music-filled nights, open-air stages, bass and crowd energy. Beyond the gigs, you hike trails toward Loviștea and the Subcarpathians, join UNESCO pottery workshops and wander Oltenia’s villages — you live the place; you don’t just tick a box.',
       ctaPrimary: 'Join the list',
       ctaSecondary: 'See the mood',
     },
@@ -186,13 +196,13 @@ export const STRINGS = {
       pHistory:
         'The settlement “Hurez” is first documented on 5 September 1487, in the time of Vlad the Monk. It grew along historic trade routes, including the salt road. At Românii de Jos, Prince Constantin Brâncoveanu raised the Horezu Monastery ensemble between 1690 and 1693 — a Brâncovenesc masterpiece inscribed in 1993 on the UNESCO World Heritage List (cultural site).',
       p2:
-        'CARPHATIA starts from that reality: open-air music, meadow stages, hikes toward ridges and forests, visits to potters and pottery fairs (Horezu’s fair tradition reaches back to 1971). If you want mountains, sound and living craft in one journey — this pass ties them together.',
+        'KARPATHIA starts from that reality: open-air music, meadow stages, hikes toward ridges and forests, visits to potters and pottery fairs (Horezu’s fair tradition reaches back to 1971). If you want mountains, sound and living craft in one journey — this pass ties them together.',
       pMountains:
         'Geographically, Horezu sits where the Subcarpathians meet the Căpățânii and Loviștea ranges (Southern Carpathians). In roughly 10–15 minutes by car you can reach the lower trailheads toward the high slopes, or the Horezu Monastery a few kilometres from the centre — where the hill-and-mountain landscape begins. The Căpățânii crest rises above 2,100 m (e.g. Nedeia, ~2,130 m); reaching the ridge means a proper hike, not just the short drive from town.',
       accent:
         'Our vision: respect for hill and valley, joy in the crowd, and a programme that binds the stage to local tradition — not an isolated gig, but a week lived in the real landscape of Oltenia.',
       p3:
-        'Whether you come for the bass, the climb or your first coffee in a stone courtyard, CARPHATIA invites you to bring home dust on your boots and festival light in your chest.',
+        'Whether you come for the bass, the climb or your first coffee in a stone courtyard, KARPATHIA invites you to bring home dust on your boots and festival light in your chest.',
     },
     gallery: {
       label: 'Visual inspiration',
@@ -229,7 +239,7 @@ export const STRINGS = {
       label: 'The experience',
       title: 'Four threads, one week that sticks',
       sub:
-        'Music, mountains, clay, people — CARPHATIA weaves it all so you feel Horezu on your skin, not on a flyer.',
+        'Music, mountains, clay, people — KARPATHIA weaves it all so you feel Horezu on your skin, not on a flyer.',
       cards: [
         {
           title: 'Mountains & trails',
@@ -247,7 +257,7 @@ export const STRINGS = {
             'Potters, pottery fair, villages and monasteries — Oltenia’s story is on the route, not a bolt-on extra.',
         },
         {
-          title: 'The full CARPHATIA pass',
+          title: 'The full KARPATHIA pass',
           description:
             'One ticket, one week: hikes, gigs, hand-picked visits and festival nights — everything Horezu promises in one journey.',
         },
@@ -274,11 +284,11 @@ export const STRINGS = {
         'https://www.google.com/maps?q=The+Park+Strada+Nicolae+Balcescu+31+Horezu&z=16&output=embed',
     },
     reservations: {
-      phone: '+0771.017.860',
+      phone: '+40 771 017 860',
       telHref: 'tel:+40771017860',
       callCta: 'Call for reservations',
       smsCta: 'Send a message',
-      smsBody: "Hi, I'd like to make a reservation for CARPHATIA. Event: ",
+      smsBody: "Hi, I'd like to make a reservation for KARPATHIA. Event: ",
     },
     contact: {
       label: 'Reservations',
@@ -289,7 +299,7 @@ export const STRINGS = {
     },
     footer: {
       meta:
-        '© {year} CARPHATIA — more than a festival · Horezu · music, mountains & traditional ceramics.',
+        '© {year} KARPATHIA — more than a festival · Horezu · music, mountains & traditional ceramics.',
     },
   },
 }

@@ -26,7 +26,7 @@ export function Footer() {
             width={560}
             height={176}
           />
-          <span className={styles.brandText}>CARPHATIA</span>
+          <span className={styles.brandText}>KARPATHIA</span>
         </a>
         <nav className={styles.nav} aria-label="Footer">
           {LINKS.map((l) => (

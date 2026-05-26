@@ -29,10 +29,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  overscroll-behavior-x: none;
   font-family: var(--font-body);
   font-size: 1.05rem;
   line-height: 1.65;
@@ -53,15 +58,21 @@ body {
   position: relative;
   min-height: 100vh;
   isolation: isolate;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 main,
 footer {
   position: relative;
   z-index: 1;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 main > section {
+  max-width: 100%;
+  overflow-x: clip;
   scroll-margin-top: clamp(5.5rem, 14vw, 10rem);
 }
 

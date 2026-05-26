@@ -31,19 +31,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
+  min-width: 0;
 }
 
 .brand {
   display: flex;
   align-items: center;
   gap: 0.65rem;
+  min-width: 0;
+  flex: 1 1 auto;
 }
 
 .logo {
   height: clamp(112px, 20vw, 168px);
   width: auto;
-  max-width: min(520px, 72vw);
+  max-width: min(520px, calc(100vw - 4.5rem));
   object-fit: contain;
   filter: drop-shadow(0 2px 12px rgba(27, 59, 38, 0.16));
   transition: height 0.35s var(--ease-out), max-width 0.35s var(--ease-out);
@@ -51,7 +54,7 @@
 
 .barCompact .logo {
   height: clamp(44px, 8vw, 54px);
-  max-width: min(240px, 52vw);
+  max-width: min(240px, calc(100vw - 4.5rem));
 }
 
 .brandText {
@@ -170,6 +173,7 @@
 
 .menuBtn {
   display: none;
+  flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
   gap: 6px;
