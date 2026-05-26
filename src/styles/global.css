@@ -37,8 +37,28 @@ body {
   font-size: 1.05rem;
   line-height: 1.65;
   color: var(--ink);
-  background: var(--cream);
+  background: linear-gradient(
+    180deg,
+    #dd9d1f 0%,
+    #e8be4a 18%,
+    #e9d899 36%,
+    #c8db99 56%,
+    #7ba063 76%,
+    #2f5f3f 100%
+  );
   -webkit-font-smoothing: antialiased;
+}
+
+.appShell {
+  position: relative;
+  min-height: 100vh;
+  isolation: isolate;
+}
+
+main,
+footer {
+  position: relative;
+  z-index: 1;
 }
 
 img {

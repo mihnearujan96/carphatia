@@ -7,10 +7,14 @@
 }
 
 .barSolid {
-  background: rgba(247, 244, 238, 0.88);
+  background: linear-gradient(
+    180deg,
+    rgba(27, 59, 38, 0.8) 0%,
+    rgba(35, 74, 50, 0.62) 100%
+  );
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 1px 0 rgba(27, 59, 38, 0.06);
+  box-shadow: 0 1px 0 rgba(166, 226, 46, 0.1);
 }
 
 .inner {
@@ -56,9 +60,9 @@
 .lang {
   display: flex;
   border-radius: 999px;
-  border: 1px solid rgba(27, 59, 38, 0.12);
+  border: 1px solid rgba(247, 244, 238, 0.28);
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .langBtn {
@@ -68,18 +72,18 @@
   letter-spacing: 0.08em;
   border: none;
   background: transparent;
-  color: var(--muted);
+  color: rgba(247, 244, 238, 0.82);
   cursor: pointer;
   transition: background 0.2s var(--ease-out), color 0.2s var(--ease-out);
 }
 
 .langBtn:hover,
 .langBtn:focus-visible {
-  color: var(--forest);
+  color: var(--white);
 }
 
 .langBtnActive {
-  background: rgba(27, 59, 38, 0.12);
+  background: rgba(247, 244, 238, 0.86);
   color: var(--forest);
 }
 
@@ -102,7 +106,7 @@
 .navLink {
   font-size: 0.92rem;
   font-weight: 500;
-  color: var(--muted);
+  color: rgba(247, 244, 238, 0.84);
   padding: 0.35rem 0;
   position: relative;
   transition: color 0.25s var(--ease-out);
@@ -121,7 +125,7 @@
 
 .navLink:hover,
 .navLink:focus-visible {
-  color: var(--forest);
+  color: var(--white);
 }
 
 .navLink:hover::after,

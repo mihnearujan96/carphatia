@@ -10,14 +10,14 @@ export const STRINGS = {
     meta: {
       title: 'CARPHATIA — Mai mult decât un festival · Horezu, România',
       description:
-        'CARPHATIA la Horezu: o săptămână între Loviștea, Căpățânii și ceramica UNESCO — concerte, poteci, olărit și sate din Oltenia. Trăiești locul, nu doar îl asculți.',
+        'CARPHATIA la Horezu: festival o săptămână la poalele Căpățânilor, spre Vârful lui Roman — seri cu muzică, scene în aer liber, poteci și olărit UNESCO în Oltenia.',
     },
     nav: {
       about: 'Despre',
       gallery: 'Galerie',
       experience: 'Experiență',
       contact: 'Contact',
-      nextEvent: 'Următorul eveniment',
+      nextEvent: 'Evenimente de vară',
       cta: 'Rămâi aproape',
       homeSr: 'CARPHATIA — început',
       menuSr: 'Meniu',
@@ -27,9 +27,9 @@ export const STRINGS = {
     },
     hero: {
       eyebrow: 'Horezu · mai mult decât un weekend',
-      title: 'Unde ritmul întâlnește creasta',
+      title: 'Unde sunetul întâlnește muntele',
       sub:
-        'La poalele Munților Loviștea și Căpățânii, lângă Horezu — leagăn al ceramicii tradiționale UNESCO — CARPHATIA îți dă o săptămână întreagă: concerte, poteci cu ghizi locali, ateliere de olărit și plimbări prin sate și dealuri din Oltenia. Trăiești locul, nu doar îl treci pe listă.',
+        'La Horezu, la poalele Munților Căpățânii — cu Vârful lui Roman și creasta din jur la câteva minute de oraș — CARPHATIA e o săptămână de festival: seri cu muzică și lumină, scene în aer liber, bas și energie de mulțime. Pe lângă concerte, urci pe poteci spre Loviștea și Subcarpați, intri în ateliere de olărit (ceramică UNESCO) și prin sate din Oltenia — trăiești locul, nu doar îl treci pe listă.',
       ctaPrimary: 'Înscrie-te pe listă',
       ctaSecondary: 'Vezi atmosfera',
     },
@@ -109,12 +109,21 @@ export const STRINGS = {
       ],
     },
     nextEvent: {
-      label: 'Următorul eveniment',
-      title: 'Vara anului 2026',
+      label: 'Program de vară',
+      title: 'Evenimente de vară',
       sub: 'Horezu · CARPHATIA',
-      teaser:
-        'Mai multe detalii în curând — program artistic, trasee montane și bilete.',
-      note: 'Urmărește pagina sau înscrie-te pe listă ca să fii la curent.',
+      rsvpLabel: 'RSVP',
+      rsvpPhone: '+0771.017.860',
+      rsvpHref: 'tel:+40771017860',
+      events: [
+        { date: '17 MAI', title: 'început de garden party' },
+        { date: '31 MAI', title: 'petrecere outdoor / indoor' },
+        { date: '27 IUNIE', title: 'petrecere outdoor / indoor' },
+        { date: '12 IULIE', title: 'garden party' },
+        { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
+        { date: '29 AUGUST', title: 'petrecere de final de vară' },
+      ],
+      note: 'Urmărește pagina sau înscrie-te pe listă pentru bilete și detalii.',
     },
     contact: {
       label: 'Rămâi aproape',
@@ -143,14 +152,14 @@ export const STRINGS = {
     meta: {
       title: 'CARPHATIA — More than a festival · Horezu, Romania',
       description:
-        'CARPHATIA in Horezu: one week between Loviștea, the Căpățânii range and UNESCO ceramics — gigs, trails, pottery and Oltenia’s villages. You live it, not only hear it.',
+        'CARPHATIA in Horezu: a week-long festival at the foot of the Căpățânii, toward Roman Peak — music-filled nights, open-air stages, trails and UNESCO pottery in Oltenia.',
     },
     nav: {
       about: 'About',
       gallery: 'Gallery',
       experience: 'Experience',
       contact: 'Contact',
-      nextEvent: 'Next event',
+      nextEvent: 'Summer events',
       cta: 'Stay in touch',
       homeSr: 'CARPHATIA — home',
       menuSr: 'Menu',
@@ -160,9 +169,9 @@ export const STRINGS = {
     },
     hero: {
       eyebrow: 'Horezu · more than a long weekend',
-      title: 'Where the beat meets the ridge',
+      title: 'Where sound meets the mountain',
       sub:
-        'At the foot of the Loviștea and Căpățânii ranges, beside Horezu — home of UNESCO-listed traditional ceramics — CARPHATIA gives you a full week: live shows, guided trails, pottery workshops and walks through Oltenia’s villages and hills. You live the place; you don’t just tick a box.',
+        'In Horezu, beneath the Căpățânii — Roman Peak and the ridges above town are minutes away — CARPHATIA is a full week of festival life: music-filled nights, open-air stages, bass and crowd energy. Beyond the gigs, you hike trails toward Loviștea and the Subcarpathians, join UNESCO pottery workshops and wander Oltenia’s villages — you live the place; you don’t just tick a box.',
       ctaPrimary: 'Join the list',
       ctaSecondary: 'See the mood',
     },
@@ -242,12 +251,21 @@ export const STRINGS = {
       ],
     },
     nextEvent: {
-      label: 'Next event',
-      title: 'Summer 2026',
+      label: 'Summer schedule',
+      title: 'Summer events list',
       sub: 'Horezu · CARPHATIA',
-      teaser:
-        'More details coming soon — line-up, mountain trails and tickets.',
-      note: 'Follow along or join the list to stay in the loop.',
+      rsvpLabel: 'RSVP',
+      rsvpPhone: '+0771.017.860',
+      rsvpHref: 'tel:+40771017860',
+      events: [
+        { date: '17 MAY', title: 'garden party starter' },
+        { date: '31 MAY', title: 'outdoor / indoor party' },
+        { date: '27 JUNE', title: 'outdoor / indoor party' },
+        { date: '12 JULY', title: 'garden party' },
+        { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
+        { date: '29 AUGUST', title: 'summer end party' },
+      ],
+      note: 'Follow along or join the list for tickets and updates.',
     },
     contact: {
       label: 'Stay close',

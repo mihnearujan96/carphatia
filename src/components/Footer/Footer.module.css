@@ -1,6 +1,6 @@
 .footer {
   padding: 2.5rem clamp(1.25rem, 4vw, 3rem) 3rem;
-  background: #0f2418;
+  background: transparent;
   color: rgba(247, 244, 238, 0.75);
   border-top: 1px solid rgba(166, 226, 46, 0.08);
 }
