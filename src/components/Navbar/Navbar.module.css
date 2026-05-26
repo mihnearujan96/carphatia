@@ -2,8 +2,16 @@
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 100;
-  padding: 1rem clamp(1.25rem, 4vw, 3rem);
-  transition: background 0.35s var(--ease-out), box-shadow 0.35s var(--ease-out);
+  padding: 0.5rem clamp(1.25rem, 4vw, 3rem);
+  transition:
+    background 0.35s var(--ease-out),
+    box-shadow 0.35s var(--ease-out),
+    padding 0.35s var(--ease-out);
+}
+
+.barCompact {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 
 .barSolid {
@@ -33,11 +41,17 @@
 }
 
 .logo {
-  height: clamp(144px, 24vw, 208px);
+  height: clamp(112px, 20vw, 168px);
   width: auto;
-  max-width: min(800px, 92vw);
+  max-width: min(520px, 72vw);
   object-fit: contain;
   filter: drop-shadow(0 2px 12px rgba(27, 59, 38, 0.16));
+  transition: height 0.35s var(--ease-out), max-width 0.35s var(--ease-out);
+}
+
+.barCompact .logo {
+  height: clamp(44px, 8vw, 54px);
+  max-width: min(240px, 52vw);
 }
 
 .brandText {
@@ -210,7 +224,7 @@
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: clamp(200px, 42vw, 280px);
+    top: clamp(128px, 24vw, 188px);
     left: 0;
     right: 0;
     padding: 1.25rem clamp(1.25rem, 4vw, 3rem) 1.75rem;
@@ -231,16 +245,21 @@
   }
 
   .mobileCta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 0.75rem;
     width: 100%;
     padding: 0.85rem;
     font-weight: 600;
-    border: none;
     border-radius: var(--radius-md);
     background: linear-gradient(135deg, var(--sunset), var(--gold));
     color: var(--white);
-    cursor: pointer;
     box-shadow: var(--shadow-lift);
+  }
+
+  .barCompact .mobilePanel {
+    top: clamp(72px, 16vw, 88px);
   }
 }
 

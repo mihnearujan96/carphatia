@@ -61,6 +61,10 @@ footer {
   z-index: 1;
 }
 
+main > section {
+  scroll-margin-top: clamp(5.5rem, 14vw, 10rem);
+}
+
 img {
   max-width: 100%;
   height: auto;

@@ -1,15 +1,12 @@
-import { useState } from 'react'
 import { useI18n } from '../../i18n/useI18n'
+import { buildSmsHref } from '../../utils/reservations'
 import styles from './Contact.module.css'
 
 export function Contact() {
   const { t } = useI18n()
-  const [sent, setSent] = useState(false)
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    setSent(true)
-  }
+  const smsBody = t('reservations.smsBody')
+  const messageHref =
+    typeof smsBody === 'string' ? buildSmsHref(smsBody) : buildSmsHref('')
 
   return (
     <section id="contact" className={styles.section} aria-labelledby="contact-title">
@@ -22,60 +19,20 @@ export function Contact() {
           <p className={styles.sub}>{t('contact.sub')}</p>
         </header>
 
-        {sent ? (
-          <p className={styles.success} role="status">
-            {t('contact.success')}
-          </p>
-        ) : (
-          <form className={styles.form} onSubmit={handleSubmit} noValidate>
-            <div className={styles.field}>
-              <label className={styles.labelText} htmlFor="name">
-                {t('contact.name')}
-              </label>
-              <input
-                id="name"
-                name="name"
-                className={styles.input}
-                type="text"
-                autoComplete="name"
-                required
-                placeholder={t('contact.placeholderName')}
-              />
-            </div>
-            <div className={styles.field}>
-              <label className={styles.labelText} htmlFor="email">
-                {t('contact.email')}
-              </label>
-              <input
-                id="email"
-                name="email"
-                className={styles.input}
-                type="email"
-                autoComplete="email"
-                required
-                placeholder={t('contact.placeholderEmail')}
-              />
-            </div>
-            <div className={styles.field}>
-              <label className={styles.labelText} htmlFor="message">
-                {t('contact.message')}
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                className={styles.textarea}
-                required
-                placeholder={t('contact.placeholderMessage')}
-              />
-            </div>
-            <div className={styles.submitRow}>
-              <button type="submit" className={styles.submit}>
-                {t('contact.submit')}
-              </button>
-              <p className={styles.note}>{t('contact.note')}</p>
-            </div>
-          </form>
-        )}
+        <div className={styles.panel}>
+          <a className={styles.phone} href={t('reservations.telHref')}>
+            {t('reservations.phone')}
+          </a>
+          <div className={styles.actions}>
+            <a className={styles.ctaCall} href={t('reservations.telHref')}>
+              {t('reservations.callCta')}
+            </a>
+            <a className={styles.ctaSms} href={messageHref}>
+              {t('reservations.smsCta')}
+            </a>
+          </div>
+          <p className={styles.note}>{t('contact.note')}</p>
+        </div>
       </div>
     </section>
   )

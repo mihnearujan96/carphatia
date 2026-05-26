@@ -7,6 +7,7 @@ const NAV = [
   { href: '#gallery', key: 'gallery' },
   { href: '#experience', key: 'experience' },
   { href: '#next-event', key: 'nextEvent' },
+  { href: '#location', key: 'location' },
   { href: '#contact', key: 'contact' },
 ]
 
@@ -28,7 +29,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`${styles.bar} ${scrolled || open ? styles.barSolid : ''}`}
+      className={`${styles.bar} ${scrolled || open ? styles.barSolid : ''} ${scrolled ? styles.barCompact : ''}`}
     >
       <div className={styles.inner}>
         <a href="#top" className={styles.brand} onClick={() => setOpen(false)}>
@@ -70,7 +71,7 @@ export function Navbar() {
               {t(`nav.${item.key}`)}
             </a>
           ))}
-          <a className={styles.cta} href="#contact">
+          <a className={styles.cta} href={t('reservations.telHref')}>
             {t('nav.cta')}
           </a>
         </nav>
@@ -123,16 +124,13 @@ export function Navbar() {
               {t(`nav.${item.key}`)}
             </a>
           ))}
-          <button
-            type="button"
+          <a
             className={styles.mobileCta}
-            onClick={() => {
-              setOpen(false)
-              document.getElementById('contact')?.scrollIntoView()
-            }}
+            href={t('reservations.telHref')}
+            onClick={() => setOpen(false)}
           >
             {t('nav.cta')}
-          </button>
+          </a>
         </div>
       )}
     </header>

@@ -6,6 +6,7 @@ const LINKS = [
   { href: '#gallery', key: 'gallery' },
   { href: '#experience', key: 'experience' },
   { href: '#next-event', key: 'nextEvent' },
+  { href: '#location', key: 'location' },
   { href: '#contact', key: 'contact' },
 ]
 

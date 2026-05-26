@@ -16,9 +16,10 @@ export const STRINGS = {
       about: 'Despre',
       gallery: 'Galerie',
       experience: 'Experiență',
-      contact: 'Contact',
+      contact: 'Rezervări',
       nextEvent: 'Evenimente de vară',
-      cta: 'Rămâi aproape',
+      location: 'Locație',
+      cta: 'Sună pentru rezervări',
       homeSr: 'CARPHATIA — început',
       menuSr: 'Meniu',
       langRo: 'Română',
@@ -111,10 +112,6 @@ export const STRINGS = {
     nextEvent: {
       label: 'Program de vară',
       title: 'Evenimente de vară',
-      sub: 'Horezu · CARPHATIA',
-      rsvpLabel: 'RSVP',
-      rsvpPhone: '+0771.017.860',
-      rsvpHref: 'tel:+40771017860',
       events: [
         { date: '17 MAI', title: 'început de garden party' },
         { date: '31 MAI', title: 'petrecere outdoor / indoor' },
@@ -123,24 +120,29 @@ export const STRINGS = {
         { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
         { date: '29 AUGUST', title: 'petrecere de final de vară' },
       ],
-      note: 'Urmărește pagina sau înscrie-te pe listă pentru bilete și detalii.',
+      locationLabel: 'Locație',
+      venueName: 'The Park',
+      address: 'Strada Nicolae Bălcescu 31, Horezu, Vâlcea',
+      openMaps: 'Deschide în Google Maps',
+      mapsLink:
+        'https://www.google.com/maps/search/?api=1&query=The+Park+Strada+Nicolae+Balcescu+31+Horezu',
+      mapEmbed:
+        'https://www.google.com/maps?q=The+Park+Strada+Nicolae+Balcescu+31+Horezu&z=16&output=embed',
+    },
+    reservations: {
+      phone: '+0771.017.860',
+      telHref: 'tel:+40771017860',
+      callCta: 'Sună pentru rezervări',
+      smsCta: 'Trimite mesaj',
+      smsBody:
+        'Bună, aș dori o rezervare la CARPHATIA. Eveniment: ',
     },
     contact: {
-      label: 'Rămâi aproape',
-      title: 'Fii printre primii care află când deschidem biletele',
+      label: 'Rezervări',
+      title: 'Sună sau trimite un mesaj',
       sub:
-        'Parteneriate, presă, artiști sau drumeți — spune-ne cum vrei să construim împreună CARPHATIA la Horezu. Citim fiecare mesaj.',
-      name: 'Nume',
-      email: 'E-mail',
-      message: 'Mesaj',
-      placeholderName: 'Numele tău',
-      placeholderEmail: 'tu@domeniu.ro',
-      placeholderMessage:
-        'Bilete, voluntariat, concert sau traseu — ce te aduce la Horezu?',
-      submit: 'Trimite mesajul',
-      note: 'Acest formular este demonstrativ și nu trimite date pe server încă.',
-      success:
-        'Mulțumim — am primit mesajul. Te contactăm în curând.',
+        'Pentru bilete, rezervări la masă sau petreceri private la evenimentele de vară — suntem la un telefon distanță.',
+      note: 'Răspundem cât mai repede în timpul programului de vară.',
     },
     footer: {
       meta:
@@ -158,9 +160,10 @@ export const STRINGS = {
       about: 'About',
       gallery: 'Gallery',
       experience: 'Experience',
-      contact: 'Contact',
+      contact: 'Reservations',
       nextEvent: 'Summer events',
-      cta: 'Stay in touch',
+      location: 'Location',
+      cta: 'Call for reservations',
       homeSr: 'CARPHATIA — home',
       menuSr: 'Menu',
       langRo: 'Romanian',
@@ -253,10 +256,6 @@ export const STRINGS = {
     nextEvent: {
       label: 'Summer schedule',
       title: 'Summer events list',
-      sub: 'Horezu · CARPHATIA',
-      rsvpLabel: 'RSVP',
-      rsvpPhone: '+0771.017.860',
-      rsvpHref: 'tel:+40771017860',
       events: [
         { date: '17 MAY', title: 'garden party starter' },
         { date: '31 MAY', title: 'outdoor / indoor party' },
@@ -265,24 +264,28 @@ export const STRINGS = {
         { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
         { date: '29 AUGUST', title: 'summer end party' },
       ],
-      note: 'Follow along or join the list for tickets and updates.',
+      locationLabel: 'Location',
+      venueName: 'The Park',
+      address: '31 Nicolae Bălcescu Street, Horezu, Vâlcea',
+      openMaps: 'Open in Google Maps',
+      mapsLink:
+        'https://www.google.com/maps/search/?api=1&query=The+Park+Strada+Nicolae+Balcescu+31+Horezu',
+      mapEmbed:
+        'https://www.google.com/maps?q=The+Park+Strada+Nicolae+Balcescu+31+Horezu&z=16&output=embed',
+    },
+    reservations: {
+      phone: '+0771.017.860',
+      telHref: 'tel:+40771017860',
+      callCta: 'Call for reservations',
+      smsCta: 'Send a message',
+      smsBody: "Hi, I'd like to make a reservation for CARPHATIA. Event: ",
     },
     contact: {
-      label: 'Stay close',
-      title: 'Be first to hear when tickets open',
+      label: 'Reservations',
+      title: 'Call or send a message',
       sub:
-        'Partnerships, press, artists or hikers — tell us how you want to help shape CARPHATIA in Horezu. We read every message.',
-      name: 'Name',
-      email: 'Email',
-      message: 'Message',
-      placeholderName: 'Your name',
-      placeholderEmail: 'you@domain.com',
-      placeholderMessage:
-        'Tickets, volunteering, playing a set or joining a hike — what draws you to Horezu?',
-      submit: 'Send message',
-      note: 'This demo form does not send data to a server yet.',
-      success:
-        'Thank you — your message is in. We will be in touch soon.',
+        'For tickets, table reservations or private parties at our summer events — we are one call away.',
+      note: 'We reply as soon as we can during the summer schedule.',
     },
     footer: {
       meta:

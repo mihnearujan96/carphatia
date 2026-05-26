@@ -1,7 +1,6 @@
 .section {
   padding: clamp(4rem, 9vw, 6.5rem) clamp(1.25rem, 4vw, 3rem);
   background: transparent;
-  color: var(--cream);
 }
 
 .inner {
@@ -20,7 +19,7 @@
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: rgba(253, 187, 45, 0.95);
+  color: var(--forest-soft);
   margin: 0 0 0.65rem;
 }
 
@@ -30,12 +29,12 @@
   font-size: clamp(1.85rem, 3.5vw, 2.45rem);
   letter-spacing: -0.02em;
   margin: 0 0 0.75rem;
-  color: var(--cream);
+  color: var(--ink);
 }
 
 .sub {
   margin: 0;
-  color: rgba(237, 244, 212, 0.82);
+  color: rgba(15, 26, 20, 0.78);
   font-size: 1.02rem;
 }
 

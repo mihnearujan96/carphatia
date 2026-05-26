@@ -3,7 +3,7 @@
   min-height: min(100vh, 920px);
   display: flex;
   align-items: flex-end;
-  padding: clamp(11rem, 28vw, 17rem) clamp(1.25rem, 4vw, 3rem) clamp(3rem, 8vw, 5rem);
+  padding: clamp(9.5rem, 22vw, 13rem) clamp(1.25rem, 4vw, 3rem) clamp(3rem, 8vw, 5rem);
   overflow: hidden;
 }
 
