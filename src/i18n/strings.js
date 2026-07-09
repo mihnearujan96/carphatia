@@ -21,10 +21,15 @@ export const STRINGS = {
       about: 'Despre',
       gallery: 'Galerie',
       experience: 'Experiență',
-      contact: 'Rezervări',
+      contact: 'Detalii bilet',
       nextEvent: 'Evenimente de vară',
+      atv: 'ATV-uri',
+      stay: 'Cazări',
+      stayFestival: 'Cazare în festival',
+      stayHorezu: 'Cazări în Horezu',
       location: 'Locație',
-      cta: 'Sună pentru rezervări',
+      cta: 'Cumpără bilet',
+      ctaLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
       homeSr: 'KARPATHIA — început',
       menuSr: 'Meniu',
       langRo: 'Română',
@@ -32,11 +37,12 @@ export const STRINGS = {
       langSwitchSr: 'Schimbă limba site-ului',
     },
     hero: {
-      eyebrow: 'Horezu · mai mult decât un weekend',
+      eyebrow: 'Horezu · o zi de festival',
       title: 'Unde sunetul întâlnește muntele',
       sub:
-        'La Horezu, la poalele Munților Căpățânii — cu Vârful lui Roman și creasta din jur la câteva minute de oraș — KARPATHIA e o săptămână de festival: seri cu muzică și lumină, scene în aer liber, bas și energie de mulțime. Pe lângă concerte, urci pe poteci spre Loviștea și Subcarpați, intri în ateliere de olărit (ceramică UNESCO) și prin sate din Oltenia — trăiești locul, nu doar îl treci pe listă.',
-      ctaPrimary: 'Înscrie-te pe listă',
+        'La Horezu, la poalele Munților Căpățânii, KARPATHIA înseamnă o zi mare de festival: muzică, lumină, energie și mulțime. Dacă vrei să trăiești locul din plin, poți veni mai devreme pentru munte, poteci, olărit și vibe-ul din zonă, iar seara intri direct în festival.',
+      ctaPrimary: 'Cumpără bilet',
+      ctaPrimaryLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
       ctaSecondary: 'Vezi atmosfera',
     },
     about: {
@@ -51,7 +57,7 @@ export const STRINGS = {
       pMountains:
         'Geografic, Horezu se află la contactul dintre Subcarpați și masivele Căpățânii și Loviștea (Carpații Meridionali). În aproximativ 10–15 minute cu mașina poți fi deja la poalele traseelor spre versanții înalți sau la Mănăstirea Hurezi (la câțiva kilometri de centru), la începutul peisajului de deal și munte. Creasta Căpățânii urcă spre vârfuri de peste 2.100 m (de exemplu Nedeia, ~2.130 m); urcarea până la creastă înseamnă trasee de durată, nu doar drumul scurt de la oraș.',
       accent:
-        'Viziunea noastră: respect pentru deal și vale, bucurie în mulțime și o experiență care leagă scena de tradiția locului — nu un concert izolat, ci o săptămână trăită în peisajul real al Olteniei.',
+        'Viziunea noastră: respect pentru deal și vale, bucurie în mulțime și o experiență care leagă scena de tradiția locului — nu doar un concert, ci o zi de festival trăită în peisajul real al Olteniei.',
       p3:
         'Indiferent dacă vii pentru bas, pentru urcat sau pentru prima cafea în curtea unei case de piatră, KARPATHIA te invită să lași praful de pe potecă pe bocanci și amintirile de festival în suflet.',
     },
@@ -88,7 +94,7 @@ export const STRINGS = {
     },
     experience: {
       label: 'Experiența',
-      title: 'Patru fire, o săptămână care prinde',
+      title: 'Patru fire, o zi care rămâne',
       sub:
         'Muzică, munte, olărit, oameni — KARPATHIA împletește totul ca să simți Horezu pe piele, nu din broșură.',
       cards: [
@@ -110,7 +116,7 @@ export const STRINGS = {
         {
           title: 'Tot pachetul KARPATHIA',
           description:
-            'Un bilet, o săptămână: urcări, concerte, vizite alese și seri de festival — tot ce promite Horezu, într-un singur drum.',
+            'Un bilet, o zi de festival: concert, atmosferă și experiențe locale — iar dacă vii mai devreme, te bucuri de munte și de Horezu înainte de show.',
         },
       ],
     },
@@ -118,12 +124,7 @@ export const STRINGS = {
       label: 'Program de vară',
       title: 'Evenimente de vară',
       events: [
-        { date: '17 MAI', title: 'început de garden party' },
-        { date: '31 MAI', title: 'petrecere outdoor / indoor' },
-        { date: '27 IUNIE', title: 'petrecere outdoor / indoor' },
-        { date: '12 IULIE', title: 'garden party' },
         { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
-        { date: '29 AUGUST', title: 'petrecere de final de vară' },
       ],
       locationLabel: 'Locație',
       venueName: 'The Park',
@@ -134,20 +135,51 @@ export const STRINGS = {
       mapEmbed:
         'https://www.google.com/maps?q=The+Park+Strada+Nicolae+Balcescu+31+Horezu&z=16&output=embed',
     },
+    atv: {
+      label: 'Activități',
+      title: 'ATV-uri',
+      sub: 'Închiriază ATV-uri pentru plimbări montane, trasee off-road și experiențe în natură.',
+      imageAlt: 'ATV WILD - ofertă închiriere ATV în zona Horezu',
+      phoneLabel: 'Sună pentru rezervare:',
+      phone1: '0799 478 727',
+      phone1Href: 'tel:+40799478727',
+      phone2: '0754 573 827',
+      phone2Href: 'tel:+40754573827',
+    },
+    stays: {
+      label: 'Cazare',
+      title: 'Unde te cazezi pentru festival',
+      sub: 'Am pregătit două opțiuni rapide de rezervare, direct pe Booking.',
+      festivalTitle: 'Cazare în festival',
+      festivalText:
+        'Pentru cazare chiar în zona festivalului, folosește linkul direct de mai jos.',
+      festivalCta: 'Vezi cazare în festival',
+      festivalLink: 'https://www.booking.com/Share-nMBCdY',
+      horezuTitle: 'Cazări în Horezu',
+      horezuText:
+        'Dacă preferi să stai în oraș, vezi opțiunile de cazare din Horezu pentru perioada evenimentului.',
+      horezuCta: 'Vezi cazări în Horezu',
+      horezuLink:
+        'https://www.booking.com/searchresults.ro.html?ss=Horezu&ssne=Horezu&ssne_untouched=Horezu&highlighted_hotels=393761&label=pensiunea-andra-s-house-LrI2NzmrmDbmc_Om5FA32QS392304234952%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2397602597457%3Akwd-1436804725617%3Alp9250662%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YairvxL4WE14mgHolLc6Uug-Share-k35suB%401783591475-Share-3gERonI%401783591501&sid=e5c2bc9a1aa3bf3d9ab9c9278ba99828&aid=319855&lang=ro&sb=1&src_elem=sb&src=searchresults&dest_id=-1161448&dest_type=city&checkin=2026-08-07&checkout=2026-08-09&group_adults=2&no_rooms=1&group_children=0',
+    },
     reservations: {
       phone: '0771 017 860',
       telHref: 'tel:+40771017860',
-      callCta: 'Sună pentru rezervări',
-      smsCta: 'Trimite mesaj',
+      callCta: 'Cumpără bilet',
+      buyLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
+      smsCta: '',
       smsBody:
         'Bună, aș dori o rezervare la KARPATHIA. Eveniment: ',
     },
     contact: {
-      label: 'Rezervări',
-      title: 'Sună sau trimite un mesaj',
+      label: 'Detalii bilet',
+      title: 'Cumpără bilet',
       sub:
-        'Pentru bilete, rezervări la masă sau petreceri private la evenimentele de vară — suntem la un telefon distanță.',
-      note: 'Răspundem cât mai repede în timpul programului de vară.',
+        'Festivalul este pe 8 august, iar biletul se cumpără online. Dacă ajungi mai devreme, te poți bucura de munte, natură și atmosfera din Horezu înainte de eveniment.',
+      noteEmoji: '🎉',
+      note: 'Ne vedem la KARPATHIA.',
+      tablesNote:
+        'Mesele se dau primul venit, primul servit, în limita locurilor disponibile.',
     },
     footer: {
       meta:
@@ -170,10 +202,15 @@ export const STRINGS = {
       about: 'About',
       gallery: 'Gallery',
       experience: 'Experience',
-      contact: 'Reservations',
+      contact: 'Ticket details',
       nextEvent: 'Summer events',
+      atv: 'ATVs',
+      stay: 'Stays',
+      stayFestival: 'Festival stay',
+      stayHorezu: 'Horezu stays',
       location: 'Location',
-      cta: 'Call for reservations',
+      cta: 'Buy ticket',
+      ctaLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
       homeSr: 'KARPATHIA — home',
       menuSr: 'Menu',
       langRo: 'Romanian',
@@ -181,11 +218,12 @@ export const STRINGS = {
       langSwitchSr: 'Change site language',
     },
     hero: {
-      eyebrow: 'Horezu · more than a long weekend',
+      eyebrow: 'Horezu · one festival day',
       title: 'Where sound meets the mountain',
       sub:
-        'In Horezu, beneath the Căpățânii — Roman Peak and the ridges above town are minutes away — KARPATHIA is a full week of festival life: music-filled nights, open-air stages, bass and crowd energy. Beyond the gigs, you hike trails toward Loviștea and the Subcarpathians, join UNESCO pottery workshops and wander Oltenia’s villages — you live the place; you don’t just tick a box.',
-      ctaPrimary: 'Join the list',
+        'In Horezu, beneath the Căpățânii, KARPATHIA means one big festival day: music, lights, crowd energy and open-air vibe. If you want the full experience, come earlier for mountain trails, local craft and village atmosphere, then head into the festival in the evening.',
+      ctaPrimary: 'Buy ticket',
+      ctaPrimaryLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
       ctaSecondary: 'See the mood',
     },
     about: {
@@ -200,7 +238,7 @@ export const STRINGS = {
       pMountains:
         'Geographically, Horezu sits where the Subcarpathians meet the Căpățânii and Loviștea ranges (Southern Carpathians). In roughly 10–15 minutes by car you can reach the lower trailheads toward the high slopes, or the Horezu Monastery a few kilometres from the centre — where the hill-and-mountain landscape begins. The Căpățânii crest rises above 2,100 m (e.g. Nedeia, ~2,130 m); reaching the ridge means a proper hike, not just the short drive from town.',
       accent:
-        'Our vision: respect for hill and valley, joy in the crowd, and a programme that binds the stage to local tradition — not an isolated gig, but a week lived in the real landscape of Oltenia.',
+        'Our vision: respect for hill and valley, joy in the crowd, and a programme that binds the stage to local tradition — not just an isolated gig, but one festival day lived in the real landscape of Oltenia.',
       p3:
         'Whether you come for the bass, the climb or your first coffee in a stone courtyard, KARPATHIA invites you to bring home dust on your boots and festival light in your chest.',
     },
@@ -237,7 +275,7 @@ export const STRINGS = {
     },
     experience: {
       label: 'The experience',
-      title: 'Four threads, one week that sticks',
+      title: 'Four threads, one day that stays with you',
       sub:
         'Music, mountains, clay, people — KARPATHIA weaves it all so you feel Horezu on your skin, not on a flyer.',
       cards: [
@@ -259,7 +297,7 @@ export const STRINGS = {
         {
           title: 'The full KARPATHIA pass',
           description:
-            'One ticket, one week: hikes, gigs, hand-picked visits and festival nights — everything Horezu promises in one journey.',
+            'One ticket, one festival day: concert, atmosphere and local experiences — and if you arrive earlier, you can enjoy the mountains and Horezu before the show.',
         },
       ],
     },
@@ -267,12 +305,7 @@ export const STRINGS = {
       label: 'Summer schedule',
       title: 'Summer events list',
       events: [
-        { date: '17 MAY', title: 'garden party starter' },
-        { date: '31 MAY', title: 'outdoor / indoor party' },
-        { date: '27 JUNE', title: 'outdoor / indoor party' },
-        { date: '12 JULY', title: 'garden party' },
         { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
-        { date: '29 AUGUST', title: 'summer end party' },
       ],
       locationLabel: 'Location',
       venueName: 'The Park',
@@ -283,19 +316,50 @@ export const STRINGS = {
       mapEmbed:
         'https://www.google.com/maps?q=The+Park+Strada+Nicolae+Balcescu+31+Horezu&z=16&output=embed',
     },
+    atv: {
+      label: 'Activities',
+      title: 'ATVs',
+      sub: 'Rent ATVs for mountain rides, off-road routes and nature experiences.',
+      imageAlt: 'ATV WILD rental offer near Horezu',
+      phoneLabel: 'Call to book:',
+      phone1: '0799 478 727',
+      phone1Href: 'tel:+40799478727',
+      phone2: '0754 573 827',
+      phone2Href: 'tel:+40754573827',
+    },
+    stays: {
+      label: 'Accommodation',
+      title: 'Where to stay for the festival',
+      sub: 'Two quick Booking options, ready to open.',
+      festivalTitle: 'Festival stay',
+      festivalText:
+        'For accommodation right in the festival area, use the direct link below.',
+      festivalCta: 'See festival stay',
+      festivalLink: 'https://www.booking.com/Share-nMBCdY',
+      horezuTitle: 'Horezu stays',
+      horezuText:
+        'If you prefer staying in town, check Horezu accommodation options for the event period.',
+      horezuCta: 'See Horezu stays',
+      horezuLink:
+        'https://www.booking.com/searchresults.ro.html?ss=Horezu&ssne=Horezu&ssne_untouched=Horezu&highlighted_hotels=393761&label=pensiunea-andra-s-house-LrI2NzmrmDbmc_Om5FA32QS392304234952%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2397602597457%3Akwd-1436804725617%3Alp9250662%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YairvxL4WE14mgHolLc6Uug-Share-k35suB%401783591475-Share-3gERonI%401783591501&sid=e5c2bc9a1aa3bf3d9ab9c9278ba99828&aid=319855&lang=ro&sb=1&src_elem=sb&src=searchresults&dest_id=-1161448&dest_type=city&checkin=2026-08-07&checkout=2026-08-09&group_adults=2&no_rooms=1&group_children=0',
+    },
     reservations: {
       phone: '+40 771 017 860',
       telHref: 'tel:+40771017860',
-      callCta: 'Call for reservations',
-      smsCta: 'Send a message',
+      callCta: 'Buy ticket',
+      buyLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
+      smsCta: '',
       smsBody: "Hi, I'd like to make a reservation for KARPATHIA. Event: ",
     },
     contact: {
-      label: 'Reservations',
-      title: 'Call or send a message',
+      label: 'Ticket details',
+      title: 'Buy ticket',
       sub:
-        'For tickets, table reservations or private parties at our summer events — we are one call away.',
-      note: 'We reply as soon as we can during the summer schedule.',
+        'The festival takes place on August 8, and tickets are available online. If you arrive earlier, you can enjoy the mountains, nature and Horezu atmosphere before the event.',
+      noteEmoji: '🎉',
+      note: 'See you at KARPATHIA.',
+      tablesNote:
+        'Tables are first come, first served, subject to availability.',
     },
     footer: {
       meta:

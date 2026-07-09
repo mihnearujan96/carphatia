@@ -181,9 +181,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.95rem 1.65rem;
-  font-size: 0.95rem;
-  font-weight: 600;
+  padding: 1.2rem 2.35rem;
+  font-size: 1.08rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--forest);
   background: linear-gradient(135deg, var(--lime-soft), var(--lime));
   border: none;

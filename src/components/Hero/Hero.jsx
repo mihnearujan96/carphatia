@@ -21,7 +21,12 @@ export function Hero() {
         </h1>
         <p className={styles.sub}>{t('hero.sub')}</p>
         <div className={styles.actions}>
-          <a className={styles.btnPrimary} href="#contact">
+          <a
+            className={styles.btnPrimary}
+            href={t('hero.ctaPrimaryLink')}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {t('hero.ctaPrimary')}
           </a>
           <a className={styles.btnGhost} href="#gallery">

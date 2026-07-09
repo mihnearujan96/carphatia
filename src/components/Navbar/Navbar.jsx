@@ -7,6 +7,8 @@ const NAV = [
   { href: '#gallery', key: 'gallery' },
   { href: '#experience', key: 'experience' },
   { href: '#next-event', key: 'nextEvent' },
+  { href: '#atv', key: 'atv' },
+  { href: '#stays', key: 'stay' },
   { href: '#location', key: 'location' },
   { href: '#contact', key: 'contact' },
 ]
@@ -71,7 +73,12 @@ export function Navbar() {
               {t(`nav.${item.key}`)}
             </a>
           ))}
-          <a className={styles.cta} href={t('reservations.telHref')}>
+          <a
+            className={styles.cta}
+            href={t('nav.ctaLink')}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {t('nav.cta')}
           </a>
         </nav>
@@ -126,7 +133,9 @@ export function Navbar() {
           ))}
           <a
             className={styles.mobileCta}
-            href={t('reservations.telHref')}
+            href={t('nav.ctaLink')}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
           >
             {t('nav.cta')}
