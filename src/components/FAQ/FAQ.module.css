@@ -1,0 +1,63 @@
+.section {
+  padding: clamp(3rem, 7vw, 4.5rem) clamp(1.25rem, 4vw, 3rem);
+  background: transparent;
+  color: var(--cream);
+}
+
+.inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(253, 187, 45, 0.95);
+  margin: 0 0 0.65rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.65rem, 3.2vw, 2.1rem);
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--cream);
+}
+
+.list {
+  margin: 0;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.item {
+  margin: 0;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid rgba(237, 244, 212, 0.12);
+  border-radius: 14px;
+  background: rgba(12, 28, 18, 0.45);
+}
+
+.question {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  margin: 0 0 0.55rem;
+  color: var(--cream);
+}
+
+.answer {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: rgba(237, 244, 212, 0.82);
+}

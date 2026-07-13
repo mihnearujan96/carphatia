@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { STRINGS } from './strings'
+import { syncStructuredData } from '../seo/structuredData'
 import { I18nContext } from './i18nContext'
 
 const STORAGE_KEY = 'karpathia-lang'
@@ -76,14 +77,19 @@ export function LanguageProvider({ children }) {
     setMetaContent('meta[property="og:url"]', meta.siteUrl)
     setMetaContent('meta[property="og:image"]', meta.ogImage)
     setMetaContent('meta[property="og:locale"]', lang === 'en' ? 'en_US' : 'ro_RO')
+    setMetaContent('meta[property="og:locale:alternate"]', lang === 'en' ? 'ro_RO' : 'en_US')
     setMetaContent('meta[name="twitter:title"]', meta.title)
     setMetaContent('meta[name="twitter:description"]', meta.description)
     setMetaContent('meta[name="twitter:image"]', meta.ogImage)
+    setMetaContent('meta[property="og:image:alt"]', meta.ogImageAlt)
+    setMetaContent('meta[name="twitter:image:alt"]', meta.ogImageAlt)
 
     const canonical = document.querySelector('link[rel="canonical"]')
     if (canonical && typeof meta.siteUrl === 'string') {
       canonical.setAttribute('href', meta.siteUrl)
     }
+
+    syncStructuredData(lang)
   }, [lang])
 
   const value = useMemo(

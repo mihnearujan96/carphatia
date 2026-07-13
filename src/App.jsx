@@ -7,6 +7,7 @@ import { NextEvent } from './components/NextEvent/NextEvent'
 import { Atv } from './components/Atv/Atv'
 import { Stays } from './components/Stays/Stays'
 import { Contact } from './components/Contact/Contact'
+import { FAQ } from './components/FAQ/FAQ'
 import { Footer } from './components/Footer/Footer'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <NextEvent />
         <Atv />
         <Stays />
+        <FAQ />
         <Contact />
       </main>
       <Footer />
