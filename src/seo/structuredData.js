@@ -1,5 +1,10 @@
+import { STRINGS } from '../i18n/strings'
+import { NAV_ROUTES, absoluteUrl, getRouteByPath } from './routes'
+
 const SITE_URL = 'https://karpathia.ro/'
-const OG_IMAGE = 'https://karpathia.ro/dadada.png'
+const LOGO_SQUARE = 'https://karpathia.ro/favicon.svg'
+const LOGO_WIDE = 'https://karpathia.ro/dadada.png'
+const OG_IMAGE = LOGO_WIDE
 const TICKET_URL = 'https://ambilet.ro/bilete/karpathia-fest-2026-4664'
 
 const VENUE = {
@@ -29,7 +34,14 @@ function organizationSchema(isRo) {
     name: 'KARPATHIA',
     alternateName: ['Karpathia', 'Carpathia', 'Karpathia Festival', 'Karpathia Mini Festival'],
     url: SITE_URL,
-    logo: OG_IMAGE,
+    logo: {
+      '@type': 'ImageObject',
+      url: LOGO_SQUARE,
+      width: 512,
+      height: 512,
+      caption: 'KARPATHIA',
+    },
+    image: LOGO_WIDE,
     description: isRo
       ? 'Festival KARPATHIA la Horezu, județul Vâlcea — house, nostalgia, disco și muzică electronică, alături de ceramică UNESCO și experiențe montane în Carpați.'
       : 'KARPATHIA festival in Horezu, Vâlcea County — house, nostalgia, disco and electronic music alongside UNESCO ceramics and mountain experiences in the Carpathians.',
@@ -191,6 +203,39 @@ function faqItems(isRo) {
   ]
 }
 
+function navigationSchema(isRo) {
+  const nav = STRINGS[isRo ? 'ro' : 'en'].nav
+  return {
+    '@type': 'ItemList',
+    name: isRo ? 'Secțiuni site KARPATHIA' : 'KARPATHIA site sections',
+    itemListElement: NAV_ROUTES.map((route, index) => ({
+      '@type': 'SiteNavigationElement',
+      position: index + 1,
+      name: nav[route.navKey],
+      url: absoluteUrl(route.path),
+    })),
+  }
+}
+
+function webPageSchema(isRo, pathname) {
+  const route = getRouteByPath(pathname)
+  const locale = isRo ? 'ro' : 'en'
+  return {
+    '@type': 'WebPage',
+    '@id': absoluteUrl(route.path),
+    url: absoluteUrl(route.path),
+    name: route.meta[locale].title,
+    description: route.meta[locale].description,
+    inLanguage: isRo ? 'ro-RO' : 'en-US',
+    isPartOf: {
+      '@type': 'WebSite',
+      '@id': `${SITE_URL}#website`,
+      url: SITE_URL,
+      name: 'KARPATHIA',
+    },
+  }
+}
+
 function faqSchema(isRo) {
   const items = faqItems(isRo)
   return {
@@ -204,13 +249,15 @@ function faqSchema(isRo) {
   }
 }
 
-export function getStructuredDataGraph(lang) {
+export function getStructuredDataGraph(lang, pathname = '/') {
   const isRo = lang !== 'en'
   return {
     '@context': 'https://schema.org',
     '@graph': [
       organizationSchema(isRo),
       websiteSchema(isRo),
+      navigationSchema(isRo),
+      webPageSchema(isRo, pathname),
       eventSchema(isRo),
       placeSchema(isRo),
       faqSchema(isRo),
@@ -218,7 +265,7 @@ export function getStructuredDataGraph(lang) {
   }
 }
 
-export function syncStructuredData(lang) {
+export function syncStructuredData(lang, pathname = '/') {
   if (typeof document === 'undefined') return
 
   const id = 'karpathia-structured-data'
@@ -229,5 +276,5 @@ export function syncStructuredData(lang) {
     el.type = 'application/ld+json'
     document.head.appendChild(el)
   }
-  el.textContent = JSON.stringify(getStructuredDataGraph(lang))
+  el.textContent = JSON.stringify(getStructuredDataGraph(lang, pathname))
 }

@@ -1,17 +1,8 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useI18n } from '../../i18n/useI18n'
+import { NAV_ROUTES } from '../../seo/routes'
 import styles from './Navbar.module.css'
-
-const NAV = [
-  { href: '#about', key: 'about' },
-  { href: '#gallery', key: 'gallery' },
-  { href: '#experience', key: 'experience' },
-  { href: '#next-event', key: 'nextEvent' },
-  { href: '#atv', key: 'atv' },
-  { href: '#stays', key: 'stay' },
-  { href: '#location', key: 'location' },
-  { href: '#contact', key: 'contact' },
-]
 
 export function Navbar() {
   const { lang, setLang, t } = useI18n()
@@ -34,16 +25,16 @@ export function Navbar() {
       className={`${styles.bar} ${scrolled || open ? styles.barSolid : ''} ${scrolled ? styles.barCompact : ''}`}
     >
       <div className={styles.inner}>
-        <a href="#top" className={styles.brand} onClick={() => setOpen(false)}>
+        <Link to="/" className={styles.brand} onClick={() => setOpen(false)}>
           <img
             src="/dadada.png"
-            alt=""
+            alt="KARPATHIA"
             className={styles.logo}
             width={600}
             height={192}
           />
           <span className="sr-only">{t('nav.homeSr')}</span>
-        </a>
+        </Link>
 
         <nav className={styles.nav} aria-label="Primary">
           <div
@@ -68,10 +59,10 @@ export function Navbar() {
               EN
             </button>
           </div>
-          {NAV.map((item) => (
-            <a key={item.href} className={styles.navLink} href={item.href}>
-              {t(`nav.${item.key}`)}
-            </a>
+          {NAV_ROUTES.map((item) => (
+            <Link key={item.path} className={styles.navLink} to={item.path}>
+              {t(`nav.${item.navKey}`)}
+            </Link>
           ))}
           <a
             className={styles.cta}
@@ -121,15 +112,15 @@ export function Navbar() {
               EN
             </button>
           </div>
-          {NAV.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
+          {NAV_ROUTES.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
               className={styles.mobileLink}
               onClick={() => setOpen(false)}
             >
-              {t(`nav.${item.key}`)}
-            </a>
+              {t(`nav.${item.navKey}`)}
+            </Link>
           ))}
           <a
             className={styles.mobileCta}

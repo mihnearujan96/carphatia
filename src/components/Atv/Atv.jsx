@@ -24,12 +24,14 @@ export function Atv() {
           />
           <div className={styles.phones}>
             <p className={styles.phoneLabel}>{t('atv.phoneLabel')}</p>
-            <a className={styles.phone} href={t('atv.phone1Href')}>
-              {t('atv.phone1')}
-            </a>
-            <a className={styles.phone} href={t('atv.phone2Href')}>
-              {t('atv.phone2')}
-            </a>
+            <div className={styles.phoneList}>
+              <a className={styles.phone} href={t('atv.phone1Href')}>
+                {t('atv.phone1')}
+              </a>
+              <a className={styles.phone} href={t('atv.phone2Href')}>
+                {t('atv.phone2')}
+              </a>
+            </div>
           </div>
         </div>
       </div>

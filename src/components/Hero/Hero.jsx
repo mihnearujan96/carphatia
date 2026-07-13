@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useI18n } from '../../i18n/useI18n'
 import styles from './Hero.module.css'
 
@@ -29,9 +30,9 @@ export function Hero() {
           >
             {t('hero.ctaPrimary')}
           </a>
-          <a className={styles.btnGhost} href="#gallery">
+          <Link className={styles.btnGhost} to="/galerie">
             {t('hero.ctaSecondary')}
-          </a>
+          </Link>
         </div>
       </div>
 

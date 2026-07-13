@@ -1,6 +1,5 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { STRINGS } from './strings'
-import { syncStructuredData } from '../seo/structuredData'
 import { I18nContext } from './i18nContext'
 
 const STORAGE_KEY = 'karpathia-lang'
@@ -14,24 +13,6 @@ function getByPath(obj, path) {
     cur = cur[k]
   }
   return cur
-}
-
-function setMetaContent(selector, content) {
-  if (typeof content !== 'string') return
-  let el = document.querySelector(selector)
-  if (!el) {
-    const isProperty = selector.includes('property=')
-    el = document.createElement('meta')
-    if (isProperty) {
-      const match = selector.match(/property="([^"]+)"/)
-      if (match) el.setAttribute('property', match[1])
-    } else {
-      const match = selector.match(/name="([^"]+)"/)
-      if (match) el.setAttribute('name', match[1])
-    }
-    document.head.appendChild(el)
-  }
-  el.setAttribute('content', content)
 }
 
 export function LanguageProvider({ children }) {
@@ -64,33 +45,6 @@ export function LanguageProvider({ children }) {
     },
     [strings],
   )
-
-  useEffect(() => {
-    const meta = STRINGS[lang]?.meta ?? STRINGS.ro.meta
-    document.documentElement.lang = lang === 'en' ? 'en' : 'ro'
-
-    if (typeof meta.title === 'string') document.title = meta.title
-    setMetaContent('meta[name="description"]', meta.description)
-    setMetaContent('meta[name="keywords"]', meta.keywords)
-    setMetaContent('meta[property="og:title"]', meta.title)
-    setMetaContent('meta[property="og:description"]', meta.description)
-    setMetaContent('meta[property="og:url"]', meta.siteUrl)
-    setMetaContent('meta[property="og:image"]', meta.ogImage)
-    setMetaContent('meta[property="og:locale"]', lang === 'en' ? 'en_US' : 'ro_RO')
-    setMetaContent('meta[property="og:locale:alternate"]', lang === 'en' ? 'ro_RO' : 'en_US')
-    setMetaContent('meta[name="twitter:title"]', meta.title)
-    setMetaContent('meta[name="twitter:description"]', meta.description)
-    setMetaContent('meta[name="twitter:image"]', meta.ogImage)
-    setMetaContent('meta[property="og:image:alt"]', meta.ogImageAlt)
-    setMetaContent('meta[name="twitter:image:alt"]', meta.ogImageAlt)
-
-    const canonical = document.querySelector('link[rel="canonical"]')
-    if (canonical && typeof meta.siteUrl === 'string') {
-      canonical.setAttribute('href', meta.siteUrl)
-    }
-
-    syncStructuredData(lang)
-  }, [lang])
 
   const value = useMemo(
     () => ({ lang, setLang, t, strings }),

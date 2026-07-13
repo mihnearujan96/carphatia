@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import { Navbar } from './components/Navbar/Navbar'
 import { Hero } from './components/Hero/Hero'
 import { About } from './components/About/About'
@@ -9,24 +10,38 @@ import { Stays } from './components/Stays/Stays'
 import { Contact } from './components/Contact/Contact'
 import { FAQ } from './components/FAQ/FAQ'
 import { Footer } from './components/Footer/Footer'
+import { PageSeo } from './components/PageSeo/PageSeo'
+import { RouteScroller } from './components/RouteScroller/RouteScroller'
+
+function HomePage() {
+  return (
+    <>
+      <PageSeo />
+      <RouteScroller />
+      <div className="appShell">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Gallery />
+          <Experience />
+          <NextEvent />
+          <Atv />
+          <Stays />
+          <FAQ />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </>
+  )
+}
 
 function App() {
   return (
-    <div className="appShell">
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Gallery />
-        <Experience />
-        <NextEvent />
-        <Atv />
-        <Stays />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="*" element={<HomePage />} />
+    </Routes>
   )
 }
 

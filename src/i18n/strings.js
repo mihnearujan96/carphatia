@@ -39,10 +39,10 @@ export const STRINGS = {
       langSwitchSr: 'Schimbă limba site-ului',
     },
     hero: {
-      eyebrow: '8 august 2026 · The Park · Horezu, Vâlcea',
-      title: 'Festival KARPATHIA la Horezu',
+      eyebrow: 'Horezu · o zi de festival',
+      title: 'Unde sunetul întâlnește muntele',
       sub:
-        'House, nostalgia, disco și sunet electronic la poalele Căpățânii — un festival de vară unde muzica întâlnește ceramică UNESCO, munte și spiritul Olteniei. Vino mai devreme pentru poteci și olărit, apoi intră în festival seara.',
+        'La Horezu, la poalele Munților Căpățânii, KARPATHIA înseamnă o zi mare de festival: muzică, lumină, energie și mulțime. Dacă vrei să trăiești locul din plin, poți veni mai devreme pentru munte, poteci, olărit și vibe-ul din zonă, iar seara intri direct în festival.',
       ctaPrimary: 'Cumpără bilet',
       ctaPrimaryLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
       ctaSecondary: 'Vezi atmosfera',
@@ -106,9 +106,9 @@ export const STRINGS = {
             'Ghizi locali te urcă pe poteci din Munții Loviștea și Căpățânii și în Subcarpații Meridionali — ritm de om obișnuit, fără alpinism de concurs, cu siguranță pe primul loc.',
         },
         {
-          title: 'House, nostalgia & seri',
+          title: 'Sunet & seri',
           description:
-            'De la grădină la pajiște: house, nostalgia, disco și electronic — sunetul urcă odată cu dealul, iar festivalul Karpathia îți dă vibe-ul unei nopți de vară în Vâlcea.',
+            'De la grădină la pajiște: electronic, live band, acustic la răsărit — sunetul urcă odată cu dealul.',
         },
         {
           title: 'Meșteșug & drumuri',
@@ -126,11 +126,7 @@ export const STRINGS = {
       label: 'Program de vară',
       title: 'Evenimente de vară',
       events: [
-        {
-          date: '8 AUGUST',
-          title: 'FESTIVAL KARPATHIA — HOUSE & NOSTALGIA',
-          highlight: true,
-        },
+        { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
       ],
       locationLabel: 'Locație',
       venueName: 'The Park',
@@ -205,9 +201,9 @@ export const STRINGS = {
     },
     contact: {
       label: 'Detalii bilet',
-      title: 'Cumpără bilet festival Karpathia 2026',
+      title: 'Cumpără bilet',
       sub:
-        'Festivalul KARPATHIA este pe 8 august la The Park Horezu, Vâlcea. Biletul se cumpără online. Dacă ajungi mai devreme, te poți bucura de munte, ceramică și atmosfera din Horezu înainte de eveniment.',
+        'Festivalul este pe 8 august, iar biletul se cumpără online. Dacă ajungi mai devreme, te poți bucura de munte, natură și atmosfera din Horezu înainte de eveniment.',
       noteEmoji: '🎉',
       note: 'Ne vedem la KARPATHIA.',
       tablesNote:
@@ -215,7 +211,7 @@ export const STRINGS = {
     },
     footer: {
       meta:
-        '© {year} KARPATHIA — festival Horezu, Vâlcea · house, nostalgia, munte și ceramică UNESCO.',
+        '© {year} KARPATHIA — mai mult decât un festival · Horezu · muzică, munte și ceramică tradițională.',
     },
   },
 
@@ -252,10 +248,10 @@ export const STRINGS = {
       langSwitchSr: 'Change site language',
     },
     hero: {
-      eyebrow: '8 August 2026 · The Park · Horezu, Vâlcea',
-      title: 'KARPATHIA Festival in Horezu',
+      eyebrow: 'Horezu · one festival day',
+      title: 'Where sound meets the mountain',
       sub:
-        'House, nostalgia, disco and electronic sound at the foot of the Căpățânii — a summer festival where music meets UNESCO ceramics, mountains and the spirit of Oltenia. Arrive early for trails and pottery, then step into the festival at night.',
+        'In Horezu, beneath the Căpățânii, KARPATHIA means one big festival day: music, lights, crowd energy and open-air vibe. If you want the full experience, come earlier for mountain trails, local craft and village atmosphere, then head into the festival in the evening.',
       ctaPrimary: 'Buy ticket',
       ctaPrimaryLink: 'https://ambilet.ro/bilete/karpathia-fest-2026-4664',
       ctaSecondary: 'See the mood',
@@ -319,9 +315,9 @@ export const STRINGS = {
             'Local guides lead you onto trails in the Loviștea and Căpățânii ranges and the Southern Subcarpathians — everyday pace, no elite climbing, safety first.',
         },
         {
-          title: 'House, nostalgia & nights',
+          title: 'Sound & nights',
           description:
-            'Garden to meadow: house, nostalgia, disco and electronic — the Karpathia festival sound rises with the hill in Vâlcea.',
+            'Garden to meadow: electronic, live bands, sunrise acoustic — the sound rises with the hill.',
         },
         {
           title: 'Craft & roads',
@@ -339,11 +335,7 @@ export const STRINGS = {
       label: 'Summer schedule',
       title: 'Summer events list',
       events: [
-        {
-          date: '8 AUGUST',
-          title: 'KARPATHIA FESTIVAL — HOUSE & NOSTALGIA',
-          highlight: true,
-        },
+        { date: '8 AUGUST', title: 'FESTIVAL', highlight: true },
       ],
       locationLabel: 'Location',
       venueName: 'The Park',
@@ -417,9 +409,9 @@ export const STRINGS = {
     },
     contact: {
       label: 'Ticket details',
-      title: 'Buy Karpathia Fest 2026 tickets',
+      title: 'Buy ticket',
       sub:
-        'KARPATHIA festival is on 8 August at The Park Horezu, Vâlcea. Tickets are available online. Arrive earlier to enjoy mountains, ceramics and the Horezu atmosphere before the event.',
+        'The festival takes place on August 8, and tickets are available online. If you arrive earlier, you can enjoy the mountains, nature and Horezu atmosphere before the event.',
       noteEmoji: '🎉',
       note: 'See you at KARPATHIA.',
       tablesNote:
@@ -427,7 +419,7 @@ export const STRINGS = {
     },
     footer: {
       meta:
-        '© {year} KARPATHIA — Horezu festival, Vâlcea · house, nostalgia, mountains & UNESCO ceramics.',
+        '© {year} KARPATHIA — more than a festival · Horezu · music, mountains & traditional ceramics.',
     },
   },
 }
