@@ -2,7 +2,7 @@ import { STRINGS } from '../i18n/strings'
 import { NAV_ROUTES, absoluteUrl, getRouteByPath } from './routes'
 
 const SITE_URL = 'https://karpathia.ro/'
-const LOGO_SQUARE = 'https://karpathia.ro/favicon.svg'
+const LOGO_SQUARE = 'https://karpathia.ro/favicon-192.png?v=2'
 const LOGO_WIDE = 'https://karpathia.ro/dadada.png'
 const OG_IMAGE = LOGO_WIDE
 const TICKET_URL = 'https://ambilet.ro/bilete/karpathia-fest-2026-4664'

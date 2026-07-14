@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="KARPATHIA">
-  <rect width="512" height="512" rx="96" fill="#1b3b26"/>
-  <path
-    fill="#fdbb2d"
-    d="M128 352V160h72c44 0 76 28 76 72 0 28-12 50-34 62l52 58h-62l-44-52h-28v52zm56-96h16c20 0 32-10 32-28s-12-28-32-28h-16zm152-56h56v192h-56z"
-  />
-</svg>
