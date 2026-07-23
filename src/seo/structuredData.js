@@ -32,7 +32,9 @@ function organizationSchema(isRo) {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'KARPATHIA',
-    alternateName: ['Karpathia', 'Carpathia', 'Karpathia Festival', 'Karpathia Mini Festival'],
+    legalName: 'ANDRA COTTAGE SRL',
+    taxID: 'RO35251749',
+    alternateName: ['Karpathia', 'Carpathia', 'Karpathia Festival', 'Karpathia Mini Festival', 'ANDRA COTTAGE SRL'],
     url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
@@ -42,9 +44,17 @@ function organizationSchema(isRo) {
       caption: 'KARPATHIA',
     },
     image: LOGO_WIDE,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Strada Nicolae Bălcescu 29',
+      addressLocality: 'Horezu',
+      addressRegion: 'Vâlcea',
+      postalCode: '245800',
+      addressCountry: 'RO',
+    },
     description: isRo
-      ? 'Festival KARPATHIA la Horezu, județul Vâlcea — house, nostalgia, disco și muzică electronică, alături de ceramică UNESCO și experiențe montane în Carpați.'
-      : 'KARPATHIA festival in Horezu, Vâlcea County — house, nostalgia, disco and electronic music alongside UNESCO ceramics and mountain experiences in the Carpathians.',
+      ? 'Festival KARPATHIA la Horezu, județul Vâlcea — house, nostalgia, disco și muzică electronică, alături de ceramică UNESCO și experiențe montane în Carpați. Organizat de ANDRA COTTAGE SRL.'
+      : 'KARPATHIA festival in Horezu, Vâlcea County — house, nostalgia, disco and electronic music alongside UNESCO ceramics and mountain experiences in the Carpathians. Organized by ANDRA COTTAGE SRL.',
     areaServed: {
       '@type': 'AdministrativeArea',
       name: 'Vâlcea',
@@ -118,6 +128,8 @@ function eventSchema(isRo) {
     organizer: {
       '@type': 'Organization',
       name: 'KARPATHIA',
+      legalName: 'ANDRA COTTAGE SRL',
+      taxID: 'RO35251749',
       url: SITE_URL,
     },
     offers: {

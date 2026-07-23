@@ -10,6 +10,7 @@ import { Stays } from './components/Stays/Stays'
 import { Contact } from './components/Contact/Contact'
 import { FAQ } from './components/FAQ/FAQ'
 import { Footer } from './components/Footer/Footer'
+import { TermsPage } from './components/Legal/Terms'
 import { PageSeo } from './components/PageSeo/PageSeo'
 import { RouteScroller } from './components/RouteScroller/RouteScroller'
 
@@ -40,6 +41,7 @@ function HomePage() {
 function App() {
   return (
     <Routes>
+      <Route path="/termeni" element={<TermsPage />} />
       <Route path="*" element={<HomePage />} />
     </Routes>
   )

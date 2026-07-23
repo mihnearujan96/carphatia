@@ -10,6 +10,7 @@ export function Footer() {
   const year = new Date().getFullYear()
   const meta = t('footer.meta').replace('{year}', String(year))
   const links = NAV_ROUTES.filter((r) => FOOTER_KEYS.includes(r.navKey))
+  const company = t('footer.company')
 
   return (
     <footer className={styles.footer}>
@@ -30,8 +31,18 @@ export function Footer() {
               {t(`nav.${l.navKey}`)}
             </Link>
           ))}
+          <Link to="/termeni">{t('footer.terms')}</Link>
         </nav>
-        <p className={styles.meta}>{meta}</p>
+        <div className={styles.meta}>
+          <p>{meta}</p>
+          {company && typeof company === 'object' ? (
+            <p className={styles.legal}>
+              {company.name} · CUI {company.cui} · {company.regCom}
+              <br />
+              {company.address}
+            </p>
+          ) : null}
+        </div>
       </div>
     </footer>
   )

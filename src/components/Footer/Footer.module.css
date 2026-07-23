@@ -70,6 +70,16 @@
   color: rgba(247, 244, 238, 0.45);
 }
 
+.meta p {
+  margin: 0;
+}
+
+.legal {
+  margin-top: 0.65rem !important;
+  line-height: 1.5;
+  color: rgba(247, 244, 238, 0.38);
+}
+
 @media (max-width: 640px) {
   .inner {
     flex-direction: column;

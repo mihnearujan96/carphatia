@@ -184,6 +184,24 @@ export const SITE_ROUTES = [
       },
     },
   },
+  {
+    path: '/termeni',
+    sectionId: null,
+    navKey: null,
+    hash: '',
+    meta: {
+      ro: {
+        title: 'Termeni și condiții · KARPATHIA | ANDRA COTTAGE SRL',
+        description:
+          'Termeni și condiții pentru festivalul KARPATHIA — organizator ANDRA COTTAGE SRL, CUI 35251749, Horezu, Vâlcea. Bilete, acces, responsabilități.',
+      },
+      en: {
+        title: 'Terms and conditions · KARPATHIA | ANDRA COTTAGE SRL',
+        description:
+          'Terms and conditions for the KARPATHIA festival — organizer ANDRA COTTAGE SRL, CUI 35251749, Horezu, Vâlcea. Tickets, access, responsibilities.',
+      },
+    },
+  },
 ]
 
 export const NAV_ROUTES = SITE_ROUTES.filter((r) => r.navKey)

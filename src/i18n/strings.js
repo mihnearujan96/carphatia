@@ -212,6 +212,113 @@ export const STRINGS = {
     footer: {
       meta:
         '© {year} KARPATHIA — mai mult decât un festival · Horezu · muzică, munte și ceramică tradițională.',
+      terms: 'Termeni și condiții',
+      company: {
+        name: 'ANDRA COTTAGE SRL',
+        cui: '35251749',
+        regCom: 'J2015000685382',
+        address: 'Str. Nicolae Bălcescu 29, Horezu, Vâlcea, 245800',
+      },
+    },
+    terms: {
+      label: 'Legal',
+      title: 'Termeni și condiții',
+      updated: 'Actualizat: 23 iulie 2026',
+      intro:
+        'Acești termeni și condiții reglementează accesul la site-ul karpathia.ro și participarea la festivalul KARPATHIA. Prin accesarea site-ului, cumpărarea unui bilet sau participarea la eveniment, confirmi că ai citit și acceptat aceste prevederi.',
+      companyHeading: 'Organizator',
+      fields: {
+        name: 'Denumire',
+        cui: 'CUI',
+        regCom: 'Nr. Reg. Com.',
+        address: 'Sediu social',
+      },
+      company: {
+        name: 'ANDRA COTTAGE SRL',
+        cui: '35251749',
+        regCom: 'J2015000685382',
+        address: 'Str. Nicolae Bălcescu 29, Loc. Horezu, Jud. Vâlcea, Cod 245800, România',
+      },
+      backHome: '← Înapoi la KARPATHIA',
+      sections: [
+        {
+          title: '1. Organizatorul evenimentului',
+          paragraphs: [
+            'Festivalul KARPATHIA este organizat de ANDRA COTTAGE SRL, persoană juridică română, cu sediul în Horezu, județul Vâlcea (CUI 35251749, Nr. Reg. Com. J2015000685382).',
+            'Evenimentul are loc la The Park, Strada Nicolae Bălcescu 31, Horezu, județul Vâlcea, în data de 8 august 2026 (programul exact poate fi comunicat ulterior pe site și pe canalele oficiale).',
+          ],
+        },
+        {
+          title: '2. Bilete și plăți',
+          paragraphs: [
+            'Biletele se cumpără online prin platforma parteneră afișată pe site (ambilet.ro). Prețul, tipurile de bilete și disponibilitatea sunt cele indicate la momentul achiziției.',
+            'Confirmarea plății și regulile de emitere/anulare/rambursare ale biletelor sunt cele ale platformei de ticketing, în completarea prezentelor condiții.',
+            'Biletul este personal sau transferabil doar în condițiile comunicate de organizator / platformă. Prezentarea unui bilet valid este obligatorie pentru acces.',
+          ],
+        },
+        {
+          title: '3. Accesul în locație',
+          paragraphs: [
+            'Accesul se face pe baza biletului valid (digital sau tipărit) și, la cerere, a unui act de identitate.',
+            'Organizatorul își rezervă dreptul de a refuza accesul sau de a evacua persoanele care încalcă regulile evenimentului, fără obligația de rambursare a biletului, atunci când fapta justifică măsura.',
+          ],
+          bullets: [
+            'Este interzis accesul cu arme, obiecte contondente, materiale pirotehnice, droguri sau substanțe ilegale.',
+            'Sticlele de sticlă, obiectele ascuțite și echipamentele profesionale de înregistrare pot fi restricționate, cu excepția acreditărilor oficiale.',
+            'Organizatorul poate efectua controale de securitate la intrare.',
+          ],
+        },
+        {
+          title: '4. Conduită pe durata festivalului',
+          paragraphs: [
+            'Participanții trebuie să respecte personalul, ceilalți festivalieri, proprietatea locației și instrucțiunile de siguranță.',
+            'Consumul de alcool este permis doar în limitele legale și în zonele desemnate. Este interzisă vânzarea sau oferirea de alcool minorilor.',
+          ],
+        },
+        {
+          title: '5. Minori',
+          paragraphs: [
+            'Minorii pot participa doar însoțiți de un părinte sau tutore legal, în condițiile comunicate pentru eveniment. Organizatorul poate solicita dovada vârstei.',
+            'Răspunderea pentru siguranța și conduita minorului revine adultului însoțitor.',
+          ],
+        },
+        {
+          title: '6. Foto, video și imagine',
+          paragraphs: [
+            'Pe durata evenimentului pot fi realizate fotografii și filmări în scopuri de promovare, documentare și arhivă a festivalului KARPATHIA.',
+            'Prin participare, accepți că poți apărea în materiale oficiale (site, social media, material tipărit), fără pretenții financiare, în limitele legii.',
+          ],
+        },
+        {
+          title: '7. Program, modificări și forță majoră',
+          paragraphs: [
+            'Programul artiștilor, orarul, zonele și facilitățile pot fi modificate din motive organizatorice, tehnice, de siguranță sau meteo.',
+            'În caz de anulare, amânare sau modificare majoră din cauze de forță majoră sau din motive independente de voința organizatorului, soluțiile (reamânare, credit, rambursare parțială/totală etc.) vor fi comunicate pe canalele oficiale, în măsura posibilului și a obligațiilor legale/contractuale.',
+          ],
+        },
+        {
+          title: '8. Răspundere',
+          paragraphs: [
+            'Organizatorul depune eforturi rezonabile pentru desfășurarea în siguranță a evenimentului, dar nu răspunde pentru daune cauzate de fapta participantului, a terților sau de situații imprevizibile în afara controlului său, în limitele legii.',
+            'Participanții sunt responsabili pentru bunurile personale. Se recomandă atenție sporită în zonele aglomerate.',
+            'Serviciile conexe (cazare, ATV, transport terți etc.) pot fi oferite de parteneri; condițiile acestora se aplică separat.',
+          ],
+        },
+        {
+          title: '9. Date personale',
+          paragraphs: [
+            'Datele colectate prin site, formular sau ticketing sunt folosite pentru organizarea evenimentului, comunicări legate de festival și îndeplinirea obligațiilor legale.',
+            'Pentru detalii despre prelucrare poți solicita informații organizatorului. Platformele terțe de plată/ticketing au propriile politici de confidențialitate.',
+          ],
+        },
+        {
+          title: '10. Legea aplicabilă',
+          paragraphs: [
+            'Acești termeni sunt guvernați de legea română. Eventualele litigii vor fi soluționate pe cale amiabilă sau, dacă nu este posibil, de instanțele competente din România.',
+            'Organizatorul poate actualiza acești termeni; versiunea publicată pe karpathia.ro/termeni este cea în vigoare.',
+          ],
+        },
+      ],
     },
   },
 
@@ -420,6 +527,113 @@ export const STRINGS = {
     footer: {
       meta:
         '© {year} KARPATHIA — more than a festival · Horezu · music, mountains & traditional ceramics.',
+      terms: 'Terms and conditions',
+      company: {
+        name: 'ANDRA COTTAGE SRL',
+        cui: '35251749',
+        regCom: 'J2015000685382',
+        address: 'Str. Nicolae Bălcescu 29, Horezu, Vâlcea, 245800',
+      },
+    },
+    terms: {
+      label: 'Legal',
+      title: 'Terms and conditions',
+      updated: 'Updated: 23 July 2026',
+      intro:
+        'These terms and conditions govern access to karpathia.ro and participation in the KARPATHIA festival. By using the site, buying a ticket or attending the event, you confirm that you have read and accept these provisions.',
+      companyHeading: 'Organizer',
+      fields: {
+        name: 'Company name',
+        cui: 'Tax ID (CUI)',
+        regCom: 'Trade Register No.',
+        address: 'Registered office',
+      },
+      company: {
+        name: 'ANDRA COTTAGE SRL',
+        cui: '35251749',
+        regCom: 'J2015000685382',
+        address: '29 Nicolae Bălcescu Street, Horezu, Vâlcea County, 245800, Romania',
+      },
+      backHome: '← Back to KARPATHIA',
+      sections: [
+        {
+          title: '1. Event organizer',
+          paragraphs: [
+            'The KARPATHIA festival is organized by ANDRA COTTAGE SRL, a Romanian legal entity based in Horezu, Vâlcea County (CUI 35251749, Trade Register No. J2015000685382).',
+            'The event takes place at The Park, 31 Nicolae Bălcescu Street, Horezu, Vâlcea County, on 8 August 2026 (the detailed schedule may be announced later on the website and official channels).',
+          ],
+        },
+        {
+          title: '2. Tickets and payments',
+          paragraphs: [
+            'Tickets are purchased online via the partner platform shown on the site (ambilet.ro). Prices, ticket types and availability are those indicated at the time of purchase.',
+            'Payment confirmation and ticket issuance/cancellation/refund rules are those of the ticketing platform, in addition to these terms.',
+            'Tickets are personal or transferable only under conditions communicated by the organizer / platform. A valid ticket is required for entry.',
+          ],
+        },
+        {
+          title: '3. Venue access',
+          paragraphs: [
+            'Access is granted with a valid ticket (digital or printed) and, upon request, an identity document.',
+            'The organizer reserves the right to refuse entry or remove persons who breach event rules, without refund when the conduct justifies the measure.',
+          ],
+          bullets: [
+            'Weapons, blunt objects, pyrotechnics, drugs or illegal substances are prohibited.',
+            'Glass bottles, sharp objects and professional recording equipment may be restricted, except for official accreditation.',
+            'Security checks may be carried out at the entrance.',
+          ],
+        },
+        {
+          title: '4. Conduct during the festival',
+          paragraphs: [
+            'Participants must respect staff, other attendees, venue property and safety instructions.',
+            'Alcohol may only be consumed within legal limits and in designated areas. Selling or providing alcohol to minors is prohibited.',
+          ],
+        },
+        {
+          title: '5. Minors',
+          paragraphs: [
+            'Minors may attend only when accompanied by a parent or legal guardian, under the conditions communicated for the event. Proof of age may be requested.',
+            'The accompanying adult is responsible for the minor’s safety and conduct.',
+          ],
+        },
+        {
+          title: '6. Photo, video and image',
+          paragraphs: [
+            'Photos and video may be taken during the event for promotion, documentation and archival of the KARPATHIA festival.',
+            'By attending, you accept that you may appear in official materials (website, social media, print), without financial claims, within the limits of the law.',
+          ],
+        },
+        {
+          title: '7. Schedule, changes and force majeure',
+          paragraphs: [
+            'Artist line-up, timetable, zones and facilities may change for organizational, technical, safety or weather reasons.',
+            'In case of cancellation, postponement or major change due to force majeure or causes beyond the organizer’s control, remedies (reschedule, credit, partial/full refund, etc.) will be communicated on official channels, as far as possible and as required by law/contract.',
+          ],
+        },
+        {
+          title: '8. Liability',
+          paragraphs: [
+            'The organizer takes reasonable steps for a safe event but is not liable for damage caused by participants, third parties or unforeseeable situations beyond its control, within the limits of the law.',
+            'Participants are responsible for personal belongings. Extra care is recommended in crowded areas.',
+            'Related services (accommodation, ATVs, third-party transport, etc.) may be provided by partners under their own terms.',
+          ],
+        },
+        {
+          title: '9. Personal data',
+          paragraphs: [
+            'Data collected via the site, forms or ticketing is used to run the event, communicate about the festival and meet legal obligations.',
+            'For processing details you may contact the organizer. Third-party payment/ticketing platforms have their own privacy policies.',
+          ],
+        },
+        {
+          title: '10. Governing law',
+          paragraphs: [
+            'These terms are governed by Romanian law. Disputes will first be addressed amicably or, if needed, by the competent courts of Romania.',
+            'The organizer may update these terms; the version published at karpathia.ro/termeni is the one in force.',
+          ],
+        },
+      ],
     },
   },
 }
